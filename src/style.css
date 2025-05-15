@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
-h1 {
-    background: blue
+@theme {
+    --default-font-family: "Cairo";
+}
+
+:root {
+    --accent-color: "blue"
 }
