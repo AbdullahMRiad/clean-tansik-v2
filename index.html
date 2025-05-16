@@ -24,7 +24,7 @@
         <!-- Container -->
         <div class="flex flex-col md:flex-row min-h-screen">
             <!-- Sidebar -->
-            <aside class="w-full md:w-96 bg-white p-2.5 py-0 md:sticky md:top-0 md:overflow-auto">
+            <aside class="w-full md:w-96 bg-white p-2.5 py-0 md:sticky md:top-0 md:overflow-auto h-min">
                 <!-- Filter by name/calculated score section -->
                 <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3">
                     <!-- Filter by name -->
@@ -48,13 +48,13 @@
                     <!-- Filter by school score -->
                     <div class="flex-col flex">
                         <label for="college-name" class="mr-4">درجة المدرسة</label>
-                        <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="college-name">
+                        <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
                     </div>
 
                     <!-- Filter by qudurat score -->
                     <div class="flex-col flex">
                         <label for="calc-score" class="mr-4 mt-4">درجة القدرات</label>
-                        <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="calc-score">
+                        <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
                     </div>
 
                     <!-- Filter button -->
@@ -65,7 +65,8 @@
 
             <!-- Main Content -->
             <div class="flex-1 p-2 md:p-0">
-                <table class="w-full rounded-xl" style="border-collapse: separate; border-spacing: 0;">
+                <!-- Desktop table -->
+                <table class="w-full rounded-xl ml-2 hidden md:table" style="border-collapse: separate; border-spacing: 0;">
                     <thead class="bg-gray-300">
                         <tr>
                             <th class="border border-gray-400 p-2 w-3/4">العمود 1</th>
@@ -115,6 +116,73 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <!-- Mobile cards container -->
+                <div class="w-full grid grid-cols-1 gap-2 p-0 md:hidden h-min">
+                    <!-- Card -->
+                    <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
+                        <!-- Top -->
+                        <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
+                            410.000000
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
+                        <!-- Top -->
+                        <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
+                            410.000000
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
+                        <!-- Top -->
+                        <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
+                            410.000000
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
+                        <!-- Top -->
+                        <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
+                            410.000000
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
+                        <!-- Top -->
+                        <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
+                            410.000000
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
