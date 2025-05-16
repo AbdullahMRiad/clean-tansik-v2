@@ -25,40 +25,43 @@
         <div class="lg:flex flex-1 hidden overflow-hidden">
             <!-- Sidebar -->
             <aside class="sticky top-0 h-full w-96 bg-white p-2.5 py-0 overflow-y-auto">
-                <!-- Filter by name/calculated score section -->
-                <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3">
-                    <!-- Filter by name -->
-                    <div class="flex-col flex">
-                        <label for="college-name" class="mr-4">اسم الكلية</label>
-                        <input type="text" placeholder="اسم الكلية" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
+                <div class="h-min bg-gray-200 p-2.5 rounded-3xl border-2 border-black">
+                    <p class="mr-7 mb-1.5">تصفية حسب</p>
+                    <!-- Filter by name/calculated score section -->
+                    <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3">
+                        <!-- Filter by name -->
+                        <div class="flex-col flex">
+                            <label for="college-name" class="mr-4">اسم الكلية</label>
+                            <input type="text" placeholder="اسم الكلية" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
+                        </div>
+    
+                        <!-- Filter by calculated score -->
+                        <div class="flex-col flex">
+                            <label for="calc-score" class="mr-4 mt-4">الدرجة بعد المعادلة</label>
+                            <input type="text" placeholder="الدرجة بعد المعادلة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
+                        </div>
+    
+                        <!-- Filter button -->
+                        <button class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold">تصفية</button>
                     </div>
-
-                    <!-- Filter by calculated score -->
-                    <div class="flex-col flex">
-                        <label for="calc-score" class="mr-4 mt-4">الدرجة بعد المعادلة</label>
-                        <input type="text" placeholder="الدرجة بعد المعادلة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
+    
+                    <!-- Filter by school/qudurat score section -->
+                    <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3 mt-4">
+                        <!-- Filter by school score -->
+                        <div class="flex-col flex">
+                            <label for="college-name" class="mr-4">درجة المدرسة</label>
+                            <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="college-name">
+                        </div>
+    
+                        <!-- Filter by qudurat score -->
+                        <div class="flex-col flex">
+                            <label for="calc-score" class="mr-4 mt-4">درجة القدرات</label>
+                            <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="calc-score">
+                        </div>
+    
+                        <!-- Filter button -->
+                        <button class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold border-black border-2">تصفية</button>
                     </div>
-
-                    <!-- Filter button -->
-                    <button class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold">تصفية</button>
-                </div>
-
-                <!-- Filter by school/qudurat score section -->
-                <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3 mt-4">
-                    <!-- Filter by school score -->
-                    <div class="flex-col flex">
-                        <label for="college-name" class="mr-4">درجة المدرسة</label>
-                        <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="college-name">
-                    </div>
-
-                    <!-- Filter by qudurat score -->
-                    <div class="flex-col flex">
-                        <label for="calc-score" class="mr-4 mt-4">درجة القدرات</label>
-                        <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-200 transition-all box-decoration-clone bg-white" name="calc-score">
-                    </div>
-
-                    <!-- Filter button -->
-                    <button class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold border-black border-2">تصفية</button>
                 </div>
             </aside>
 
@@ -73,44 +76,44 @@
                     </thead>
                     <tbody class="bg-white">
                         <tr>
-                            <td class="border border-gray-400 p-2">1</td>
-                            <td class="border border-gray-400 p-2">A</td>
+                            <td class="">1</td>
+                            <td class="">A</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">2</td>
-                            <td class="border border-gray-400 p-2">B</td>
+                            <td class="">2</td>
+                            <td class="">B</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">3</td>
-                            <td class="border border-gray-400 p-2">C</td>
+                            <td class="">3</td>
+                            <td class="">C</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">4</td>
-                            <td class="border border-gray-400 p-2">D</td>
+                            <td class="">4</td>
+                            <td class="">D</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">5</td>
-                            <td class="border border-gray-400 p-2">E</td>
+                            <td class="">5</td>
+                            <td class="">E</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">6</td>
-                            <td class="border border-gray-400 p-2">F</td>
+                            <td class="">6</td>
+                            <td class="">F</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">7</td>
-                            <td class="border border-gray-400 p-2">G</td>
+                            <td class="">7</td>
+                            <td class="">G</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">8</td>
-                            <td class="border border-gray-400 p-2">H</td>
+                            <td class="">8</td>
+                            <td class="">H</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">9</td>
-                            <td class="border border-gray-400 p-2">I</td>
+                            <td class="">9</td>
+                            <td class="">I</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-400 p-2">10</td>
-                            <td class="border border-gray-400 p-2">J</td>
+                            <td class="">10</td>
+                            <td class="">J</td>
                         </tr>
                     </tbody>
                 </table>
