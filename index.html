@@ -11,22 +11,22 @@
         <link href="/src/style.css" rel="stylesheet" />
     </head>
 
-    <body>
+    <body class="flex flex-col h-screen overflow-hidden m-0 p-0">
         <!-- Header -->
         <div class="w-full p-2.5">
             <h1
-                class="w-full bg-gradient-to-br from-blue-400 via-blue-600 to-blue-700 rounded-3xl p-6 font-[700] text-white text-shadow-black text-4xl/relaxed text-center"
+                class="w-full bg-blue-200 rounded-3xl p-6 font-[700] text-black text-shadow-black text-4xl/relaxed text-center"
             >
                 جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤
             </h1>
         </div>
 
         <!-- Container -->
-        <div class="lg:flex h-[36.7rem] hidden">
+        <div class="lg:flex flex-1 hidden overflow-hidden">
             <!-- Sidebar -->
-            <aside class="sticky top-0 h-full w-96 bg-gray-200 p-4">
-                <!-- Filter by name section -->
-                <div class="h-[45%] border-gray-500 border-[1px] rounded-3xl shadow-lg shadow-black/20 p-3">
+            <aside class="sticky top-0 h-full w-96 bg-white p-4 overflow-y-auto">
+                <!-- Filter by name/calculated score section -->
+                <div class="h-64 border-gray-500 bg-gray-200 border-[1px] rounded-3xl shadow-lg shadow-black/20 p-3">
                     <!-- Filter by name -->
                     <div class="flex-col flex">
                         <label for="college-name" class="mr-4">اسم الكلية</label>
@@ -42,59 +42,79 @@
                     <!-- Filter button -->
                     <button class="rounded-4xl w-full py-2 bg-blue-500 mt-4 text-white font-bold">تصفية</button>
                 </div>
+
+                <!-- Filter by school/qudurat score section -->
+                <div class="h-64 border-gray-500 bg-gray-200 border-[1px] rounded-3xl shadow-lg shadow-black/20 p-3 mt-4">
+                    <!-- Filter by school score -->
+                    <div class="flex-col flex">
+                        <label for="college-name" class="mr-4">درجة المدرسة</label>
+                        <input type="text" placeholder="درجة المدرسة" class="w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
+                    </div>
+
+                    <!-- Filter by qudurat score -->
+                    <div class="flex-col flex">
+                        <label for="calc-score" class="mr-4 mt-4">درجة القدرات</label>
+                        <input type="text" placeholder="درجة القدرات" class="w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
+                    </div>
+
+                    <!-- Filter button -->
+                    <button class="rounded-4xl w-full py-2 bg-blue-500 mt-4 text-white font-bold">تصفية</button>
+                </div>
             </aside>
 
             <!-- Main Content -->
-            <table class="w-full rounded-xl">
-                <thead class="bg-gray-300">
-                    <tr>
-                        <th class="border border-gray-400 p-2">العمود 1</th>
-                        <th class="border border-gray-400 p-2">العمود 2</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white">
-                    <tr>
-                        <td class="border border-gray-400 p-2">1</td>
-                        <td class="border border-gray-400 p-2">A</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">2</td>
-                        <td class="border border-gray-400 p-2">B</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">3</td>
-                        <td class="border border-gray-400 p-2">C</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">4</td>
-                        <td class="border border-gray-400 p-2">D</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">5</td>
-                        <td class="border border-gray-400 p-2">E</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">6</td>
-                        <td class="border border-gray-400 p-2">F</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">7</td>
-                        <td class="border border-gray-400 p-2">G</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">8</td>
-                        <td class="border border-gray-400 p-2">H</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">9</td>
-                        <td class="border border-gray-400 p-2">I</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">10</td>
-                        <td class="border border-gray-400 p-2">J</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="flex-1 overflow-y-auto p-4">
+                <table class="w-full rounded-xl">
+                    <thead class="bg-gray-300">
+                        <tr>
+                            <th class="border border-gray-400 p-2">العمود 1</th>
+                            <th class="border border-gray-400 p-2">العمود 2</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td class="border border-gray-400 p-2">1</td>
+                            <td class="border border-gray-400 p-2">A</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">2</td>
+                            <td class="border border-gray-400 p-2">B</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">3</td>
+                            <td class="border border-gray-400 p-2">C</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">4</td>
+                            <td class="border border-gray-400 p-2">D</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">5</td>
+                            <td class="border border-gray-400 p-2">E</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">6</td>
+                            <td class="border border-gray-400 p-2">F</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">7</td>
+                            <td class="border border-gray-400 p-2">G</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">8</td>
+                            <td class="border border-gray-400 p-2">H</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">9</td>
+                            <td class="border border-gray-400 p-2">I</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">10</td>
+                            <td class="border border-gray-400 p-2">J</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
