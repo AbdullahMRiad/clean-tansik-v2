@@ -45,5 +45,5 @@ tbody > tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    @apply bg-blue-200 transition ease-in-out duration-200;
+    @apply bg-blue-100 transition ease-in-out duration-200;
 }
