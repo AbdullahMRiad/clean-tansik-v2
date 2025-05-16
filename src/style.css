@@ -3,7 +3,3 @@
 @theme {
     --default-font-family: "Cairo";
 }
-
-:root {
-    --accent-color: "blue"
-}
