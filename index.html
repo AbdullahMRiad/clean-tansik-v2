@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="min-h-screen">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,8 @@
         <link href="/src/style.css" rel="stylesheet" />
     </head>
 
-    <body class="flex flex-col h-screen overflow-auto md:overflow-hidden m-0 p-0">
-        <!-- Header -->
+    <body class="flex flex-col min-h-screen m-0 p-0">
+        <!--#region Header -->
         <div class="w-full p-2.5">
             <h1
                 class="w-full border-2 border-black bg-blue-200 rounded-3xl p-6 font-[700] text-black text-shadow-black text-4xl/relaxed text-center"
@@ -20,23 +20,24 @@
                 جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤
             </h1>
         </div>
+        <!--#endregion Header -->
 
-        <!-- Container -->
-        <div class="flex flex-col md:flex-row min-h-screen">
+        <!--#region Container -->
+        <div class="flex flex-col flex-1 md:flex-row overflow-auto">
             <!-- Sidebar -->
-            <aside class="w-full md:w-96 bg-white p-2.5 py-0 md:sticky md:top-0 md:overflow-auto h-min">
+            <aside class="w-full md:w-96 bg-white p-2.5 py-0 md:sticky md:top-0 md:overflow-y-auto md:h-full">
                 <!-- Filter by name/calculated score section -->
                 <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3">
                     <!-- Filter by name -->
                     <div class="flex-col flex">
                         <label for="college-name" class="mr-4">اسم الكلية</label>
-                        <input type="text" placeholder="اسم الكلية" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
+                        <input type="text" placeholder="اسم الكلية" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name" id="college-name">
                     </div>
 
                     <!-- Filter by calculated score -->
                     <div class="flex-col flex">
                         <label for="calc-score" class="mr-4 mt-4">الدرجة بعد المعادلة</label>
-                        <input type="text" placeholder="الدرجة بعد المعادلة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
+                        <input type="text" placeholder="الدرجة بعد المعادلة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score" id="calc-score">
                     </div>
 
                     <!-- Filter button -->
@@ -47,14 +48,14 @@
                 <div class="h-[17.5rem] border-black bg-gray-200 border-[2px] rounded-3xl p-3 mt-2.5">
                     <!-- Filter by school score -->
                     <div class="flex-col flex">
-                        <label for="college-name" class="mr-4">درجة المدرسة</label>
-                        <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="college-name">
+                        <label for="school-score" class="mr-4">درجة المدرسة</label>
+                        <input type="text" placeholder="درجة المدرسة" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="school-score" id="school-score">
                     </div>
 
                     <!-- Filter by qudurat score -->
                     <div class="flex-col flex">
-                        <label for="calc-score" class="mr-4 mt-4">درجة القدرات</label>
-                        <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="calc-score">
+                        <label for="qudurat-score" class="mr-4 mt-4">درجة القدرات</label>
+                        <input type="text" placeholder="درجة القدرات" class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white" name="qudurat-score" id="qudurat-score">
                     </div>
 
                     <!-- Filter button -->
@@ -64,7 +65,7 @@
             </aside>
 
             <!-- Main Content -->
-            <div class="flex-1 p-2 md:p-0">
+            <div class="flex-1 overflow-y-auto p-2 md:p-0">
                 <!-- Desktop table -->
                 <table class="w-full rounded-xl ml-2 hidden md:table" style="border-collapse: separate; border-spacing: 0;">
                     <thead class="bg-gray-300">
@@ -185,5 +186,6 @@
                 </div>
             </div>
         </div>
+        <!--#endregion-->
     </body>
 </html>
