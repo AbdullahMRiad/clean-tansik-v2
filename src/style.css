@@ -8,9 +8,10 @@
     @apply outline outline-red-400
 }
 
-* {
+/* DEBUG MODE */
+/* * {
     @apply debug
-}
+} */
 
 table {
     @apply w-full table-fixed rounded-3xl overflow-hidden text-center border-1 border-black;
