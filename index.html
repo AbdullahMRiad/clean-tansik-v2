@@ -7,15 +7,6 @@
     <title>جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
     <link href="/src/style.css" rel="stylesheet" />
-    <style>
-        .text-shadow-black {
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .rounded-4xl {
-            border-radius: 1rem;
-        }
-    </style>
 </head>
 
 <body class="min-h-screen m-0 p-1.5 md:h-screen md:flex md:flex-col md:overflow-hidden">
@@ -27,6 +18,19 @@
         </h1>
     </div>
     <!--#endregion Header -->
+
+    <div class="flex justify-center mb-4 gap-4" id="gender-toggle">
+  <input type="radio" name="gender" id="boys" value="boys" class="hidden peer/boys" checked>
+  <label for="boys" class="text-center transition-all hover:bg-blue-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold">
+    بنين
+  </label>
+
+  <input type="radio" name="gender" id="girls" value="girls" class="hidden peer/girls">
+  <label for="girls" class="text-center transition-all hover:bg-red-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-red-700 border-black border-2 rounded-4xl w-full py-2 bg-red-200 mt-4 text-black font-bold">
+    بنات
+  </label>
+</div>
+
 
     <!--#region Container -->
     <div class="md:flex md:flex-row md:flex-1 md:overflow-hidden">
@@ -88,7 +92,7 @@
 
         <!-- Main Content -->
         <div class="md:flex-1 md:overflow-y-auto p-1.5 md:p-1.5">
-            <!-- Desktop table -->
+            <!--#region Desktop table -->
             <table class="rounded-xl hidden md:table" style="border-collapse: separate; border-spacing: 0">
                 <thead class="bg-gray-300">
                     <tr>
@@ -163,6 +167,7 @@
                     </tr>
                 </tbody>
             </table>
+            <!--#endregion-->
 
             <!-- Mobile cards container -->
             <div class="w-full grid grid-cols-1 gap-3 p-0 md:hidden h-min">
