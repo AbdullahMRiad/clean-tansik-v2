@@ -1,268 +1,369 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="md:h-screen">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="/src/style.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="/src/style.css" rel="stylesheet" />
-</head>
+    <body
+        class="min-h-screen m-0 p-1.5 md:h-screen md:flex md:flex-col md:overflow-hidden"
+    >
+        <!--#region Header -->
+        <div class="w-full p-1.5">
+            <h1
+                class="w-full border-2 border-black bg-blue-200 rounded-3xl p-6 font-[700] text-black text-xl/relaxed md:text-4xl/relaxed text-center"
+            >
+                جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤
+            </h1>
+        </div>
+        <!--#endregion Header -->
 
-<body class="min-h-screen m-0 p-1.5 md:h-screen md:flex md:flex-col md:overflow-hidden">
-    <!--#region Header -->
-    <div class="w-full p-1.5">
-        <h1
-            class="w-full border-2 border-black bg-blue-200 rounded-3xl p-6 font-[700] text-black text-xl/relaxed md:text-4xl/relaxed text-center">
-            جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤
-        </h1>
-    </div>
-    <!--#endregion Header -->
+        <div class="flex justify-center mb-4 gap-4" id="gender-toggle">
+            <input
+                type="radio"
+                name="gender"
+                id="boys"
+                value="boys"
+                class="hidden peer/boys"
+                checked
+            />
+            <label
+                for="boys"
+                class="text-center transition-all hover:bg-blue-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold"
+            >
+                بنين
+            </label>
 
-    <div class="flex justify-center mb-4 gap-4" id="gender-toggle">
-  <input type="radio" name="gender" id="boys" value="boys" class="hidden peer/boys" checked>
-  <label for="boys" class="text-center transition-all hover:bg-blue-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold">
-    بنين
-  </label>
+            <input
+                type="radio"
+                name="gender"
+                id="girls"
+                value="girls"
+                class="hidden peer/girls"
+            />
+            <label
+                for="girls"
+                class="text-center transition-all hover:bg-red-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-red-700 border-black border-2 rounded-4xl w-full py-2 bg-red-200 mt-4 text-black font-bold"
+            >
+                بنات
+            </label>
+        </div>
 
-  <input type="radio" name="gender" id="girls" value="girls" class="hidden peer/girls">
-  <label for="girls" class="text-center transition-all hover:bg-red-400 hover:text-white active:scale-y-95 active:scale-x-[99%] active:bg-red-700 border-black border-2 rounded-4xl w-full py-2 bg-red-200 mt-4 text-black font-bold">
-    بنات
-  </label>
-</div>
+        <!--#region Container -->
+        <div class="md:flex md:flex-row md:flex-1 md:overflow-hidden">
+            <!-- Sidebar -->
+            <aside
+                class="w-full p-1.5 md:w-96 md:bg-white md:h-full md:sticky md:top-0 md:overflow-y-auto"
+            >
+                <!-- Filter by name/calculated score section -->
+                <div
+                    class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3"
+                >
+                    <!-- Filter by name -->
+                    <div class="flex-col flex">
+                        <label for="college-name" class="mr-4"
+                            >اسم الكلية</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="اسم الكلية"
+                            class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
+                            name="college-name"
+                            id="college-name"
+                        />
+                    </div>
 
+                    <!-- Filter by calculated score -->
+                    <div class="flex-col flex">
+                        <label for="calc-score" class="mr-4 mt-4"
+                            >الدرجة بعد المعادلة</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="الدرجة بعد المعادلة"
+                            class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
+                            name="calc-score"
+                            id="calc-score"
+                        />
+                    </div>
 
-    <!--#region Container -->
-    <div class="md:flex md:flex-row md:flex-1 md:overflow-hidden">
-        <!-- Sidebar -->
-        <aside class="w-full p-1.5 md:w-96 md:bg-white md:h-full md:sticky md:top-0 md:overflow-y-auto">
-            <!-- Filter by name/calculated score section -->
-            <div class="h-64 border-black bg-gray-200 border-[2px] rounded-3xl p-3">
-                <!-- Filter by name -->
-                <div class="flex-col flex">
-                    <label for="college-name" class="mr-4">اسم الكلية</label>
-                    <input type="text" placeholder="اسم الكلية"
-                        class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
-                        name="college-name" id="college-name" />
+                    <!-- Filter button -->
+                    <button
+                        class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold"
+                    >
+                        تصفية
+                    </button>
                 </div>
 
-                <!-- Filter by calculated score -->
-                <div class="flex-col flex">
-                    <label for="calc-score" class="mr-4 mt-4">الدرجة بعد المعادلة</label>
-                    <input type="text" placeholder="الدرجة بعد المعادلة"
-                        class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
-                        name="calc-score" id="calc-score" />
+                <!-- Filter by school/qudurat score section -->
+                <div
+                    class="h-[17.5rem] border-black bg-gray-200 border-[2px] rounded-3xl p-3 mt-1.5"
+                >
+                    <!-- Filter by school score -->
+                    <div class="flex-col flex">
+                        <label for="school-score" class="mr-4"
+                            >درجة المدرسة</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="درجة المدرسة"
+                            class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
+                            name="school-score"
+                            id="school-score"
+                        />
+                    </div>
+
+                    <!-- Filter by qudurat score -->
+                    <div class="flex-col flex">
+                        <label for="qudurat-score" class="mr-4 mt-4"
+                            >درجة القدرات</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="درجة القدرات"
+                            class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
+                            name="qudurat-score"
+                            id="qudurat-score"
+                        />
+                    </div>
+
+                    <!-- Filter button -->
+                    <button
+                        class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold border-black border-2"
+                    >
+                        حساب وتصفية
+                    </button>
+                    <p class="w-full text-center h-8 pt-2">
+                        الدرجة المحسوبة: ٤٠٩.١٢٣٤٥٦
+                    </p>
                 </div>
+            </aside>
 
-                <!-- Filter button -->
-                <button
-                    class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 border-black border-2 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold">
-                    تصفية
-                </button>
-            </div>
+            <!-- Main Content -->
+            <div class="md:flex-1 md:overflow-y-auto p-1.5 md:p-1.5">
+                <!--#region Desktop table -->
+                <table
+                    class="rounded-xl hidden md:table"
+                    style="border-collapse: separate; border-spacing: 0"
+                >
+                    <thead class="bg-gray-300">
+                        <tr>
+                            <th class="border border-gray-400 p-2 w-3/4">
+                                العمود 1
+                            </th>
+                            <th class="border border-gray-400 p-2 w-1/4">
+                                العمود 2
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td class="border border-gray-400 p-2">1</td>
+                            <td class="border border-gray-400 p-2">A</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">2</td>
+                            <td class="border border-gray-400 p-2">B</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">3</td>
+                            <td class="border border-gray-400 p-2">C</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">4</td>
+                            <td class="border border-gray-400 p-2">D</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">5</td>
+                            <td class="border border-gray-400 p-2">E</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">6</td>
+                            <td class="border border-gray-400 p-2">F</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">7</td>
+                            <td class="border border-gray-400 p-2">G</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">8</td>
+                            <td class="border border-gray-400 p-2">H</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">9</td>
+                            <td class="border border-gray-400 p-2">I</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">10</td>
+                            <td class="border border-gray-400 p-2">J</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">11</td>
+                            <td class="border border-gray-400 p-2">K</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">12</td>
+                            <td class="border border-gray-400 p-2">L</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">13</td>
+                            <td class="border border-gray-400 p-2">M</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">14</td>
+                            <td class="border border-gray-400 p-2">N</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-400 p-2">15</td>
+                            <td class="border border-gray-400 p-2">O</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--#endregion-->
 
-            <!-- Filter by school/qudurat score section -->
-            <div class="h-[17.5rem] border-black bg-gray-200 border-[2px] rounded-3xl p-3 mt-1.5">
-                <!-- Filter by school score -->
-                <div class="flex-col flex">
-                    <label for="school-score" class="mr-4">درجة المدرسة</label>
-                    <input type="text" placeholder="درجة المدرسة"
-                        class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
-                        name="school-score" id="school-score" />
-                </div>
+                <!-- Mobile cards container -->
+                <div class="w-full grid grid-cols-1 gap-3 p-0 md:hidden h-min">
+                    <!-- Card -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="grid grid-cols-1 grid-rows-1 items-center w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            <span class="h-min w-full"
+                                >اسم كلية طويل جدًا جدًا جدًا جدًا</span
+                            >
+                        </div>
 
-                <!-- Filter by qudurat score -->
-                <div class="flex-col flex">
-                    <label for="qudurat-score" class="mr-4 mt-4">درجة القدرات</label>
-                    <input type="text" placeholder="درجة القدرات"
-                        class="border-black border-2 w-full mt-2 py-2 px-3 rounded-4xl outline-0 ring-0 focus:ring-2 focus:ring-offset-gray-200 focus:ring-offset-2 focus:ring-blue-500 transition-all box-decoration-clone bg-white"
-                        name="qudurat-score" id="qudurat-score" />
-                </div>
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            410.000000
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
 
-                <!-- Filter button -->
-                <button
-                    class="transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 rounded-4xl w-full py-2 bg-blue-200 mt-4 text-black font-bold border-black border-2">
-                    حساب وتصفية
-                </button>
-                <p class="w-full text-center h-8 pt-2">
-                    الدرجة المحسوبة: ٤٠٩.١٢٣٤٥٦
-                </p>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <div class="md:flex-1 md:overflow-y-auto p-1.5 md:p-1.5">
-            <!--#region Desktop table -->
-            <table class="rounded-xl hidden md:table" style="border-collapse: separate; border-spacing: 0">
-                <thead class="bg-gray-300">
-                    <tr>
-                        <th class="border border-gray-400 p-2 w-3/4">
-                            العمود 1
-                        </th>
-                        <th class="border border-gray-400 p-2 w-1/4">
-                            العمود 2
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white">
-                    <tr>
-                        <td class="border border-gray-400 p-2">1</td>
-                        <td class="border border-gray-400 p-2">A</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">2</td>
-                        <td class="border border-gray-400 p-2">B</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">3</td>
-                        <td class="border border-gray-400 p-2">C</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">4</td>
-                        <td class="border border-gray-400 p-2">D</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">5</td>
-                        <td class="border border-gray-400 p-2">E</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">6</td>
-                        <td class="border border-gray-400 p-2">F</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">7</td>
-                        <td class="border border-gray-400 p-2">G</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">8</td>
-                        <td class="border border-gray-400 p-2">H</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">9</td>
-                        <td class="border border-gray-400 p-2">I</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">10</td>
-                        <td class="border border-gray-400 p-2">J</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">11</td>
-                        <td class="border border-gray-400 p-2">K</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">12</td>
-                        <td class="border border-gray-400 p-2">L</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">13</td>
-                        <td class="border border-gray-400 p-2">M</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">14</td>
-                        <td class="border border-gray-400 p-2">N</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-400 p-2">15</td>
-                        <td class="border border-gray-400 p-2">O</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--#endregion-->
-
-            <!-- Mobile cards container -->
-            <div class="w-full grid grid-cols-1 gap-3 p-0 md:hidden h-min">
-                <!-- Card -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="grid grid-cols-1 grid-rows-1 items-center w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        <span class="h-min w-full">اسم كلية طويل جدًا جدًا جدًا جدًا</span>
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            410.000000
+                        </div>
                     </div>
 
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        410.000000
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        اسم كلية طويل جدًا جدًا جدًا جدًا
+                    <!-- Card -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
+
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            410.000000
+                        </div>
                     </div>
 
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        410.000000
-                    </div>
-                </div>
+                    <!-- Card -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
 
-                <!-- Card -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        اسم كلية طويل جدًا جدًا جدًا جدًا
-                    </div>
-
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        410.000000
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        اسم كلية طويل جدًا جدًا جدًا جدًا
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            410.000000
+                        </div>
                     </div>
 
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        410.000000
-                    </div>
-                </div>
+                    <!-- Card -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            اسم كلية طويل جدًا جدًا جدًا جدًا
+                        </div>
 
-                <!-- Card -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        اسم كلية طويل جدًا جدًا جدًا جدًا
-                    </div>
-
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        410.000000
-                    </div>
-                </div>
-
-                <!-- Added more cards to demonstrate scrolling -->
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        اسم كلية أخرى
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            410.000000
+                        </div>
                     </div>
 
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        405.500000
-                    </div>
-                </div>
+                    <!-- Added more cards to demonstrate scrolling -->
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            اسم كلية أخرى
+                        </div>
 
-                <div class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl">
-                    <!-- Top -->
-                    <div class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black">
-                        كلية إضافية
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            405.500000
+                        </div>
                     </div>
 
-                    <!-- Bottom -->
-                    <div class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black">
-                        400.750000
+                    <div
+                        class="h-min p-2 w-full bg-gray-200 border-2 border-black rounded-3xl"
+                    >
+                        <!-- Top -->
+                        <div
+                            class="w-full h-20 mb-2 bg-white rounded-3xl text-center p-4 border-2 border-black"
+                        >
+                            كلية إضافية
+                        </div>
+
+                        <!-- Bottom -->
+                        <div
+                            class="w-full text-center leading-20 text-2xl h-20 bg-white rounded-3xl border-2 border-black"
+                        >
+                            400.750000
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--#endregion-->
-</body>
-
+        <!--#endregion-->
+    </body>
 </html>
