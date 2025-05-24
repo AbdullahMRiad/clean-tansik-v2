@@ -20,12 +20,26 @@ const scoreDisplay = document.getElementById("calc-score-display");
 
 // Attach listeners
 document.querySelectorAll('input[name="gender"]').forEach((input) =>
-    input.addEventListener("change", filterAndDisplay)
+    input.addEventListener("change", () => {
+        filterAndDisplay();
+        toggleTheme();
+    })
 );
 
 [calcScoreInput, schoolScoreInput, quduratScoreInput, collegeNameInput].forEach((input) =>
     input?.addEventListener("input", filterAndDisplay)
 );
+
+function toggleTheme() {
+    const gender = document.querySelector('input[name="gender"]:checked')?.value || "boys";
+    console.log(gender);
+    document.querySelectorAll(".toggle-bg").forEach(
+        (element) => {
+            element.classList.toggle("bg-blue-200")
+            element.classList.toggle("bg-red-200")
+        }
+    )
+}
 
 function filterAndDisplay() {
     const gender = document.querySelector('input[name="gender"]:checked')?.value || "boys";
