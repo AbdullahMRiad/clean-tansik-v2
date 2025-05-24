@@ -33,7 +33,7 @@ document.querySelectorAll('input[name="gender"]').forEach((input) =>
 function toggleTheme() {
     const gender = document.querySelector('input[name="gender"]:checked')?.value || "boys";
     console.log(gender);
-    document.querySelectorAll(".toggle-bg").forEach(
+    document.querySelectorAll(".toggle-bg-200").forEach(
         (element) => {
             element.classList.toggle("bg-blue-200")
             element.classList.toggle("bg-red-200")
