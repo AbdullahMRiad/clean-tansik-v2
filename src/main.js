@@ -39,6 +39,20 @@ function toggleTheme() {
             element.classList.toggle("bg-red-200")
         }
     )
+
+    document.querySelectorAll(".toggle-ring-500").forEach(
+        (element) => {
+            element.classList.toggle("focus:ring-blue-500")
+            element.classList.toggle("focus:ring-red-500")
+        }
+    )
+
+    document.querySelectorAll(".toggle-bg-100").forEach(
+        (element) => {
+            element.classList.toggle("bg-blue-100")
+            element.classList.toggle("bg-red-100")
+        }
+    )
 }
 
 function filterAndDisplay() {
