@@ -77,30 +77,30 @@ function filterAndDisplay() {
 function displayData(data) {
     const tbody = document.getElementById("table-body");
     const cardContainer = document.getElementById("card-container");
+    const template = document.getElementById("card-template");
 
     tbody.innerHTML = "";
     cardContainer.innerHTML = "";
 
+    // Table rows
+    const tableFrag = document.createDocumentFragment();
     data.forEach((item) => {
-        // Table view
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td class="border border-gray-400 p-2">${item.college}</td>
             <td class="border border-gray-400 p-2">${item.score.toFixed(6)}</td>
         `;
-        tbody.appendChild(tr);
-
-        // Card view
-        const card = document.createElement("div");
-        card.className = "h-min w-full rounded-3xl border-2 border-black bg-blue-200 p-2 toggle-bg";
-        card.innerHTML = `
-            <div class="mb-2 h-20 w-full rounded-3xl border-2 border-black bg-white p-4 text-center">
-                ${item.college}
-            </div>
-            <div class="h-20 w-full rounded-3xl border-2 border-black bg-white text-center text-2xl leading-20">
-                ${item.score.toFixed(6)}
-            </div>
-        `;
-        cardContainer.appendChild(card);
+        tableFrag.appendChild(tr);
     });
+    tbody.appendChild(tableFrag);
+
+    // Cards
+    const cardFrag = document.createDocumentFragment();
+    data.forEach((item) => {
+        const clone = template.content.cloneNode(true);
+        clone.querySelector("#college").textContent = item.college;
+        clone.querySelector("#score").textContent = item.score.toFixed(6);
+        cardFrag.appendChild(clone);
+    });
+    cardContainer.appendChild(cardFrag);
 }
