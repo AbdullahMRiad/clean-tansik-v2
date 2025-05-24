@@ -92,7 +92,7 @@ function displayData(data) {
 
         // Card view
         const card = document.createElement("div");
-        card.className = "h-min w-full rounded-3xl border-2 border-black bg-gray-200 p-2";
+        card.className = "h-min w-full rounded-3xl border-2 border-black bg-blue-200 p-2 toggle-bg";
         card.innerHTML = `
             <div class="mb-2 h-20 w-full rounded-3xl border-2 border-black bg-white p-4 text-center">
                 ${item.college}
