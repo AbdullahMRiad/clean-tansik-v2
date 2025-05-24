@@ -22,7 +22,7 @@ const scoreDisplay = document.getElementById("calc-score-display");
 document.querySelectorAll('input[name="gender"]').forEach((input) =>
     input.addEventListener("change", () => {
         filterAndDisplay();
-        toggleTheme();
+        setTheme();
     })
 );
 
@@ -30,27 +30,28 @@ document.querySelectorAll('input[name="gender"]').forEach((input) =>
     input?.addEventListener("input", filterAndDisplay)
 );
 
-function toggleTheme() {
+function setTheme() {
     const gender = document.querySelector('input[name="gender"]:checked')?.value || "boys";
+    const isBoys = gender === "boys"
     console.log(gender);
     document.querySelectorAll(".toggle-bg-200").forEach(
         (element) => {
-            element.classList.toggle("bg-blue-200")
-            element.classList.toggle("bg-red-200")
+            element.classList.toggle("bg-blue-200", isBoys)
+            element.classList.toggle("bg-red-200", !isBoys)
         }
     )
 
     document.querySelectorAll(".toggle-ring-500").forEach(
         (element) => {
-            element.classList.toggle("focus:ring-blue-500")
-            element.classList.toggle("focus:ring-red-500")
+            element.classList.toggle("focus:ring-blue-500", isBoys)
+            element.classList.toggle("focus:ring-red-500", !isBoys)
         }
     )
 
     document.querySelectorAll(".toggle-bg-100").forEach(
         (element) => {
-            element.classList.toggle("bg-blue-100")
-            element.classList.toggle("bg-red-100")
+            element.classList.toggle("bg-blue-100", isBoys)
+            element.classList.toggle("bg-red-100", !isBoys)
         }
     )
 }
@@ -117,4 +118,6 @@ function displayData(data) {
         cardFrag.appendChild(clone);
     });
     cardContainer.appendChild(cardFrag);
+
+    setTheme()
 }
