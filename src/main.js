@@ -67,6 +67,14 @@ function setTheme() {
             element.classList.toggle("bg-red-100", !isBoys);
         }
     );
+
+    // Toggle background color classes for elements with toggle-bg-50-hover class
+    document.querySelectorAll(".toggle-bg-50-hover").forEach(
+        (element) => {
+            element.classList.toggle("hover\:bg-blue-50", isBoys);
+            element.classList.toggle("hover\:bg-red-50", !isBoys);
+        }
+    );
 }
 //#endregion
 
@@ -124,6 +132,8 @@ function displayData(data) {
     const tableFrag = document.createDocumentFragment();
     data.forEach((item) => {
         const tr = document.createElement("tr");
+        tr.classList.add("hover:bg-blue-50")
+        tr.classList.add("toggle-bg-50-hover")
         tr.innerHTML = `
             <td class="border border-gray-400 p-2">${item.college}</td>
             <td class="border border-gray-400 p-2">${item.score.toFixed(6)}</td>

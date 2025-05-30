@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source inline("{hover:,}bg-red-50");
 
 @theme {
     --default-font-family: "Cairo";
