@@ -4,11 +4,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --default-font-family: "Cairo";
+  --default-font-family: "Cairo";
 }
 
 @utility debug {
-    @apply outline outline-red-400;
+  @apply outline outline-red-400;
 }
 
 /* DEBUG MODE */
@@ -26,11 +26,11 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: black;
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-    box-shadow: 0 0 0px 1000px white inset;
-    transition: background-color 5000s ease-in-out 0s;
-    color: black;
-    @apply shadow-md shadow-[#80000000];
-    font-family: 'Cairo', sans-serif;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: black;
+  @apply shadow-md shadow-[#80000000];
+  font-family: "Cairo", sans-serif;
 }
