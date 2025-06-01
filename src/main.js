@@ -75,6 +75,14 @@ function setTheme() {
             element.classList.toggle("hover\:bg-red-50", !isBoys);
         }
     );
+
+    // Toggle background color classes for elements with toggle-bg-50-hover class
+    document.querySelectorAll(".toggle-bg-50").forEach(
+        (element) => {
+            element.classList.toggle("bg-blue-50", isBoys);
+            element.classList.toggle("bg-red-50", !isBoys);
+        }
+    );
 }
 //#endregion
 
