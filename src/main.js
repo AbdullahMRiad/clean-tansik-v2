@@ -52,11 +52,19 @@ function setTheme() {
         }
     );
 
-    // Toggle ring color classes for elements with toggle-ring-500 class
-    document.querySelectorAll(".toggle-ring-500").forEach(
+    // Toggle ring color classes for elements with toggle-focus-ring-400 class
+    document.querySelectorAll(".toggle-focus-ring-400").forEach(
         (element) => {
-            element.classList.toggle("focus:ring-blue-500", isBoys);
-            element.classList.toggle("focus:ring-red-500", !isBoys);
+            element.classList.toggle("focus:ring-blue-400", isBoys);
+            element.classList.toggle("focus:ring-red-400", !isBoys);
+        }
+    );
+
+    // Toggle ring color classes for elements with toggle-ring-400 class
+    document.querySelectorAll(".toggle-ring-400").forEach(
+        (element) => {
+            element.classList.toggle("ring-blue-400", isBoys);
+            element.classList.toggle("ring-red-400", !isBoys);
         }
     );
 
