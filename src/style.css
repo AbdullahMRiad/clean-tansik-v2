@@ -34,3 +34,15 @@ select:-webkit-autofill:focus {
   @apply shadow-md shadow-[#80000000];
   font-family: "Cairo", sans-serif;
 }
+
+[class*="bg"]{
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+[class*="ring"]{
+  transition-property: box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
