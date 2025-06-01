@@ -142,8 +142,8 @@ function displayData(data) {
     tr.classList.add("hover:bg-blue-50");
     tr.classList.add("toggle-bg-50-hover");
     tr.innerHTML = `
-            <td class="border border-gray-400 p-2">${item.college}</td>
-            <td class="border border-gray-400 p-2">${item.score.toFixed(6)}</td>
+            <td class="border border-gray-400/20 p-2">${item.college}</td>
+            <td class="border border-gray-400/20 p-2">${item.score.toFixed(6)}</td>
         `;
     tableFrag.appendChild(tr);
   });

@@ -232,16 +232,16 @@
       <div class="rounded-3xl p-1.5 md:flex-1 md:overflow-y-auto md:p-1.5">
         <!-- #region Desktop Table View -->
         <table
-          class="hidden rounded-3xl md:table md:w-full md:border-2 md:border-black"
+          class="hidden rounded-3xl md:table md:w-full ring-2 ring-blue-400 shadow-md shadow-black/20 toggle-ring-400 overflow-clip"
           style="border-collapse: separate; border-spacing: 0"
         >
           <!-- Table Header -->
           <thead class="toggle-bg-200 bg-blue-200">
             <tr>
-              <th class="w-3/4 rounded-tr-[1.35rem] border border-gray-400 p-2">
+              <th class="w-3/4 rounded-tr-[1.45rem] border-l border-b border-gray-400/20 p-2">
                 الكلية
               </th>
-              <th class="w-1/4 rounded-tl-[1.35rem] border border-gray-400 p-2">
+              <th class="w-1/4 rounded-tl-[1.45rem] border-r border-b border-gray-400/20 p-2">
                 الدرجة بعد المعادلة
               </th>
             </tr>
@@ -249,8 +249,8 @@
           <!-- Table Body - Populated by JavaScript -->
           <tbody class="bg-white" id="table-body">
             <tr>
-              <td class="border border-black p-2">فشل تحميل البيانات</td>
-              <td class="border border-black p-2">×</td>
+              <td class="p-2">فشل تحميل البيانات</td>
+              <td class="p-2">×</td>
             </tr>
           </tbody>
         </table>
