@@ -33,14 +33,9 @@ select:-webkit-autofill:focus {
   font-family: "Cairo", sans-serif;
 }
 
-[class*="bg"]{
-  transition-property: background-color;
-  transition-duration: 150ms;
-  transition-timing-function: ease-in-out;
-}
-
-[class*="ring"]{
-  transition-property: box-shadow;
+[class*="bg"]:not(label),
+[class*="ring"]:not(label) {
+  transition-property: background-color, box-shadow;
   transition-duration: 150ms;
   transition-timing-function: ease-in-out;
 }
