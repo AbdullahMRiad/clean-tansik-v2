@@ -48,37 +48,41 @@ function setTheme() {
   // Toggle background color classes for elements with toggle-bg-200 class
   document.querySelectorAll(".toggle-bg-200").forEach((element) => {
     element.classList.toggle("bg-blue-200", isBoys);
+    element.classList.toggle("dark:bg-slate-800", isBoys);
     element.classList.toggle("bg-red-200", !isBoys);
+    element.classList.toggle("dark:bg-stone-800", !isBoys);
   });
 
   // Toggle ring color classes for elements with toggle-focus-ring-400 class
   document.querySelectorAll(".toggle-focus-ring-400").forEach((element) => {
     element.classList.toggle("focus:ring-blue-400", isBoys);
+    element.classList.toggle("dark:focus:ring-slate-700", isBoys);
     element.classList.toggle("focus:ring-red-400", !isBoys);
+    element.classList.toggle("dark:focus:ring-stone-700", !isBoys);
   });
 
   // Toggle ring color classes for elements with toggle-ring-400 class
   document.querySelectorAll(".toggle-ring-400").forEach((element) => {
     element.classList.toggle("ring-blue-400", isBoys);
+    element.classList.toggle("dark:ring-slate-700", isBoys);
     element.classList.toggle("ring-red-400", !isBoys);
-  });
-
-  // Toggle background color classes for elements with toggle-bg-100 class
-  document.querySelectorAll(".toggle-bg-100").forEach((element) => {
-    element.classList.toggle("bg-blue-100", isBoys);
-    element.classList.toggle("bg-red-100", !isBoys);
+    element.classList.toggle("dark:ring-stone-700", !isBoys);
   });
 
   // Toggle background color classes for elements with toggle-bg-50-hover class
   document.querySelectorAll(".toggle-bg-50-hover").forEach((element) => {
-    element.classList.toggle("hover\:bg-blue-50", isBoys);
-    element.classList.toggle("hover\:bg-red-50", !isBoys);
+    element.classList.toggle("hover:bg-blue-50", isBoys);
+    element.classList.toggle("dark:hover:bg-slate-950", isBoys);
+    element.classList.toggle("hover:bg-red-50", !isBoys);
+    element.classList.toggle("dark:hover:bg-stone-950", !isBoys);
   });
 
   // Toggle background color classes for elements with toggle-bg-50-hover class
   document.querySelectorAll(".toggle-bg-50").forEach((element) => {
     element.classList.toggle("bg-blue-50", isBoys);
+    element.classList.toggle("dark:bg-slate-950", isBoys);
     element.classList.toggle("bg-red-50", !isBoys);
+    element.classList.toggle("dark:bg-stone-950", !isBoys);
   });
 }
 //#endregion
@@ -139,7 +143,7 @@ function displayData(data) {
   const tableFrag = document.createDocumentFragment();
   data.forEach((item, index) => {
     const tr = document.createElement("tr");
-    if (index % 2 === 0) {tr.classList.add("bg-gray-100");tr.classList.add("dark:bg-gray-900");}
+    if (index % 2 === 0) {tr.classList.add("bg-zinc-100");tr.classList.add("dark:bg-zinc-900");}
     tr.classList.add("hover:bg-blue-50");
     tr.classList.add("dark:hover:bg-slate-800");
     tr.classList.add("toggle-bg-50-hover");
