@@ -119,8 +119,8 @@ function filterAndDisplay() {
   const filtered = data.filter((item) => {
     if (filterText && !item.college.toLowerCase().includes(filterText))
       return false;
-    if (!isNaN(calcScoreMin) && item.score > calcScoreMin) return false;
-    if (threshold !== null && item.score > threshold) return false;
+    if (!isNaN(calcScoreMin) && item.score > calcScoreMin + 1e-6) return false;
+    if (threshold !== null && item.score > threshold + 1e-6) return false;
     return true;
   });
 
