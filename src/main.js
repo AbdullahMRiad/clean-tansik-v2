@@ -137,8 +137,9 @@ function displayData(data) {
 
   // Create table rows for filtered data
   const tableFrag = document.createDocumentFragment();
-  data.forEach((item) => {
+  data.forEach((item, index) => {
     const tr = document.createElement("tr");
+    if (index % 2 === 0) {tr.classList.add("bg-gray-100");}
     tr.classList.add("hover:bg-blue-50");
     tr.classList.add("toggle-bg-50-hover");
     tr.innerHTML = `
