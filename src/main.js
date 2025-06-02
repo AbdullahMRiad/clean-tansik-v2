@@ -43,7 +43,7 @@ function setTheme() {
   const gender =
     document.querySelector('input[name="gender"]:checked')?.value || "boys";
   const isBoys = gender === "boys";
-  console.log(gender);
+  // console.log(gender);
 
   // Toggle background color classes for elements with toggle-bg-200 class
   document.querySelectorAll(".toggle-bg-200").forEach((element) => {
