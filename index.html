@@ -106,7 +106,7 @@
     <!-- #region Header Section -->
     <div class="w-full p-1.5">
       <h1
-        class="toggle-bg-200 w-full rounded-3xl ring-2 ring-blue-400 toggle-ring-400 shadow-md shadow-black/20 bg-blue-200 p-6 text-center text-xl/relaxed font-[700] text-black md:text-4xl/relaxed dark:bg-blue-800"
+        class="toggle-bg-200 toggle-ring-400 w-full rounded-3xl bg-blue-200 p-6 text-center text-xl/relaxed font-[700] text-black shadow-md ring-2 shadow-black/20 ring-blue-400 md:text-4xl/relaxed dark:bg-blue-800"
       >
         <span>جدول تنسيق الكليات المصرية لطلاب المعادلة السعودية ٢٠٢٤</span>
       </h1>
@@ -126,7 +126,7 @@
       />
       <label
         for="boys"
-        class="w-full rounded-4xl ring-2 ring-blue-400 shadow-md shadow-black/20 bg-blue-200 py-2 text-center font-bold text-black transition-all select-none hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 md:w-3xs"
+        class="w-full rounded-4xl bg-blue-200 py-2 text-center font-bold text-black shadow-md ring-2 shadow-black/20 ring-blue-400 transition-all select-none hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 md:w-3xs"
       >
         بنين
       </label>
@@ -141,7 +141,7 @@
       />
       <label
         for="girls"
-        class="w-full rounded-4xl ring-2 ring-red-400 shadow-md shadow-black/20 bg-red-200 py-2 text-center font-bold text-black transition-all select-none hover:bg-red-400 hover:text-white active:scale-95 active:bg-red-700 md:w-3xs"
+        class="w-full rounded-4xl bg-red-200 py-2 text-center font-bold text-black shadow-md ring-2 shadow-black/20 ring-red-400 transition-all select-none hover:bg-red-400 hover:text-white active:scale-95 active:bg-red-700 md:w-3xs"
       >
         بنات
       </label>
@@ -156,7 +156,7 @@
       >
         <!-- #region Filter by Name/Calculated Score -->
         <div
-          class="toggle-bg-200 h-48 rounded-3xl ring-2 ring-blue-400 shadow-md shadow-black/20 toggle-ring-400 bg-blue-200 p-3"
+          class="toggle-bg-200 toggle-ring-400 h-48 rounded-3xl bg-blue-200 p-3 shadow-md ring-2 shadow-black/20 ring-blue-400"
         >
           <!-- College Name Filter -->
           <div class="flex flex-col">
@@ -188,7 +188,7 @@
 
         <!-- #region Filter by School/Qudurat Score -->
         <div
-          class="toggle-bg-200 mt-3 h-[14rem] rounded-3xl ring-2 ring-blue-400 shadow-md shadow-black/20 toggle-ring-400 bg-blue-200 p-3"
+          class="toggle-bg-200 toggle-ring-400 mt-3 h-[14rem] rounded-3xl bg-blue-200 p-3 shadow-md ring-2 shadow-black/20 ring-blue-400"
         >
           <!-- School Score Input -->
           <div class="flex flex-col">
@@ -232,16 +232,20 @@
       <div class="rounded-3xl p-1.5 md:flex-1 md:overflow-y-auto md:p-1.5">
         <!-- #region Desktop Table View -->
         <table
-          class="hidden rounded-3xl md:table md:w-full ring-2 ring-blue-400 shadow-md shadow-black/20 toggle-ring-400 overflow-clip"
+          class="toggle-ring-400 hidden overflow-clip rounded-3xl shadow-md ring-2 shadow-black/20 ring-blue-400 md:table md:w-full"
           style="border-collapse: separate; border-spacing: 0"
         >
           <!-- Table Header -->
           <thead class="toggle-bg-200 bg-blue-200">
             <tr>
-              <th class="w-3/4 rounded-tr-[1.45rem] border-l border-b border-gray-400/20 p-2">
+              <th
+                class="w-3/4 rounded-tr-[1.45rem] border-b border-l border-gray-400/20 p-2"
+              >
                 الكلية
               </th>
-              <th class="w-1/4 rounded-tl-[1.45rem] border-r border-b border-gray-400/20 p-2">
+              <th
+                class="w-1/4 rounded-tl-[1.45rem] border-r border-b border-gray-400/20 p-2"
+              >
                 الدرجة بعد المعادلة
               </th>
             </tr>
