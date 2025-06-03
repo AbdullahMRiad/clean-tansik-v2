@@ -6,7 +6,8 @@
 
 A simple and fast website to view the Egyptian university admission results for the Saudi high school certificate in 2024, separated by boys and girls. It supports quick search and filtering by school grade and Saudi GAT score.
 
-🔗 **Live site:** [tansik-v2.vercel.app](https://tansik-v2.vercel.app)
+🔗 **Live site:** [tansik-v2.vercel.app](https://tansik-v2.vercel.app/)\
+🔗 **Testing site:** [tansik-dev.vercel.app](https://tansik-dev.vercel.app/)
 
 ---
 
