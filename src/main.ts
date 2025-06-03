@@ -6,10 +6,9 @@ interface College {
 //#endregion
 
 //#region Fetch JSON Data
-// Import boys and girls data JSON files, then initialize display
+// Import boys and girls data JSON files
 import boysData  from './b_clean_data.json'
 import girlsData from './g_clean_data.json'
-filterAndDisplay()
 //#endregion
 
 //#region Input Elements References
@@ -20,6 +19,9 @@ const quduratScoreInput = document.getElementById("qudurat-score") as HTMLInputE
 const collegeNameInput = document.getElementById("college-name")   as HTMLInputElement | null;
 const scoreDisplay = document.getElementById("calc-score-display");
 //#endregion
+
+// Initialize first data view
+filterAndDisplay()
 
 //#region Event Listeners Setup
 // Listen for gender radio button changes to update theme and filtered data
