@@ -10,6 +10,16 @@ A simple and fast website to view the Egyptian university admission results for 
 
 ---
 
+## Table of contents
+
+[1. 📌 What does the site offer?](#-what-does-the-site-offer)\
+[2. 📱 How to use](#-how-to-use)\
+[3. 🛠️ How was the site made?](#️-how-was-the-site-made)\
+[4. 💡 Have a suggestion or want to report a problem?](#-have-a-suggestion-or-want-to-report-a-problem)\
+[5. 💻 How to run the website](#-how-to-run-the-website)
+
+---
+
 ## 📌 What does the site offer?
 
 * Displays admission data separately for boys and girls
@@ -42,13 +52,13 @@ A simple and fast website to view the Egyptian university admission results for 
 
 ---
 
-## 💡 Have a suggestion?
+## 💡 Have a suggestion or want to report a problem?
 
 You can:
 
 * Raise an [Issue on GitHub](https://github.com/AbdullahMRiad/clean-tansik/issues/new)
 * Or contact me on Telegram: [@AbdullahMRiad](https://t.me/AbdullahMRiad)
-* The code is open source and contributions via Pull Requests are welcome
+* Or contribute via Pull Requests
 
 ---
 
