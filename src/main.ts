@@ -7,8 +7,11 @@ interface College {
 
 //#region Fetch JSON Data
 // Import boys and girls data JSON files
-import boysData  from './b_clean_data.json'
-import girlsData from './g_clean_data.json'
+import boysDataRaw  from './b_clean_data.json'
+import girlsDataRaw from './g_clean_data.json'
+
+const boysData:  College[] = boysDataRaw
+const girlsData: College[] = girlsDataRaw
 //#endregion
 
 //#region Input Elements References
