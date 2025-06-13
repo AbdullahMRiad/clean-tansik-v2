@@ -184,12 +184,16 @@ topButton?.addEventListener("click", ScrollToTop)
 function HandleIntersection(entries: IntersectionObserverEntry[]) {
   if (!entries[0].isIntersecting) {
     // Filters disappeared. Show button.
-    topButton?.classList.toggle("translate-y-20", false)
+    topButton?.classList.toggle("translate-y-4", false)
+    topButton?.classList.toggle("opacity-0", false)
     topButton?.classList.toggle("translate-y-0", true)
+    topButton?.classList.toggle("opacity-100", true)
   } else {
     // Filters appeared. Hide button.
-    topButton?.classList.toggle("translate-y-20", true)
+    topButton?.classList.toggle("translate-y-4", true)
+    topButton?.classList.toggle("opacity-0", true)
     topButton?.classList.toggle("translate-y-0", false)
+    topButton?.classList.toggle("opacity-100", false)
   }
 }
 
