@@ -196,13 +196,27 @@ function displayData(data: College[]) {
 const topButton = document.getElementById(
   "top-button",
 ) as HTMLButtonElement | null;
+// Reference to the scroll to table top button
+const tableTopButton = document.getElementById(
+  "table-top-button",
+) as HTMLButtonElement | null;
 // Define scroll observer and its callback
 const scrollObserver = new IntersectionObserver(HandleIntersection);
 // Start observing if the score display label is not null
 scoreDisplay
   ? scrollObserver.observe(scoreDisplay)
   : console.error("scoreDisplay wasn't found. Observer failed.");
-topButton?.addEventListener("click", ScrollToTop);
+
+// Listen for click event on the button
+topButton?.addEventListener("click", () => ScrollToTop());
+// Listen for click event on the scroll to table top button
+tableTopButton?.addEventListener("click", () =>
+  ScrollToTop(
+    document.getElementById("main-content-area")
+      ? document.getElementById("main-content-area")
+      : null,
+  ),
+);
 
 // A function to handle filters appearing and disappearing (callback in scrollObserver)
 function HandleIntersection(entries: IntersectionObserverEntry[]) {
@@ -222,13 +236,14 @@ function HandleIntersection(entries: IntersectionObserverEntry[]) {
 }
 
 // A function to handle scroll to top button click
-function ScrollToTop() {
+function ScrollToTop(element?: HTMLElement | null) {
   const scrollOptions = {
     top: 0,
     behavior: "smooth",
   } as ScrollToOptions;
 
   (
+    element ||
     document.scrollingElement ||
     document.documentElement ||
     document.body
