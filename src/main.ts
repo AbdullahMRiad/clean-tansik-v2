@@ -1,30 +1,38 @@
 //#region Type
 interface College {
-  college: string,
-  score: number
+  college: string;
+  score: number;
 }
 //#endregion
 
 //#region Fetch JSON Data
 // Import boys and girls data JSON files
-import boysDataRaw  from './b_clean_data.json'
-import girlsDataRaw from './g_clean_data.json'
+import boysDataRaw from "./b_clean_data.json";
+import girlsDataRaw from "./g_clean_data.json";
 
-const boysData:  College[] = boysDataRaw
-const girlsData: College[] = girlsDataRaw
+const boysData: College[] = boysDataRaw;
+const girlsData: College[] = girlsDataRaw;
 //#endregion
 
 //#region Input Elements References
 // Get references to input elements and display elements for filtering and output
-const calcScoreInput = document.getElementById("calc-score")       as HTMLInputElement | null;
-const schoolScoreInput = document.getElementById("school-score")   as HTMLInputElement | null;
-const quduratScoreInput = document.getElementById("qudurat-score") as HTMLInputElement | null;
-const collegeNameInput = document.getElementById("college-name")   as HTMLInputElement | null;
+const calcScoreInput = document.getElementById(
+  "calc-score",
+) as HTMLInputElement | null;
+const schoolScoreInput = document.getElementById(
+  "school-score",
+) as HTMLInputElement | null;
+const quduratScoreInput = document.getElementById(
+  "qudurat-score",
+) as HTMLInputElement | null;
+const collegeNameInput = document.getElementById(
+  "college-name",
+) as HTMLInputElement | null;
 const scoreDisplay = document.getElementById("calc-score-display");
 //#endregion
 
 // Initialize first data view
-filterAndDisplay()
+filterAndDisplay();
 
 //#region Event Listeners Setup
 // Listen for gender radio button changes to update theme and filtered data
@@ -44,8 +52,10 @@ document.querySelectorAll('input[name="gender"]').forEach((input) =>
 //#region Theme Switching Function
 // Updates UI colors depending on selected gender (boys or girls)
 function setTheme() {
-  const gender : string  = (document.querySelector('input[name="gender"]:checked') as HTMLInputElement)?.value || "boys";
-  const isBoys : boolean = gender === "boys";
+  const gender: string =
+    (document.querySelector('input[name="gender"]:checked') as HTMLInputElement)
+      ?.value || "boys";
+  const isBoys: boolean = gender === "boys";
   // console.log(gender);
 
   // Toggle background color classes for elements with toggle-bg-200 class
@@ -94,14 +104,16 @@ function setTheme() {
 // Filters the dataset based on user inputs and updates the display accordingly
 function filterAndDisplay() {
   // Get selected gender and corresponding dataset
-  const gender : string  = (document.querySelector('input[name="gender"]:checked') as HTMLInputElement)?.value || "boys";
-  const data : College[] = gender === "boys" ? boysData : girlsData;
+  const gender: string =
+    (document.querySelector('input[name="gender"]:checked') as HTMLInputElement)
+      ?.value || "boys";
+  const data: College[] = gender === "boys" ? boysData : girlsData;
 
   // Get filter values from inputs
-  const filterText : string = collegeNameInput?.value.trim().toLowerCase() || "";
-  const calcScoreMin : number = parseFloat(calcScoreInput?.value ?? "");
-  const school : number = parseFloat(schoolScoreInput?.value ?? "");
-  const qudurat : number = parseFloat(quduratScoreInput?.value ?? "");
+  const filterText: string = collegeNameInput?.value.trim().toLowerCase() || "";
+  const calcScoreMin: number = parseFloat(calcScoreInput?.value ?? "");
+  const school: number = parseFloat(schoolScoreInput?.value ?? "");
+  const qudurat: number = parseFloat(quduratScoreInput?.value ?? "");
 
   let threshold = null;
 
@@ -134,8 +146,12 @@ function filterAndDisplay() {
 // Updates both the table and card UI with filtered results
 function displayData(data: College[]) {
   const tbody = document.getElementById("table-body") as HTMLTableElement;
-  const cardContainer = document.getElementById("card-container") as HTMLDivElement;
-  const template = document.getElementById("card-template") as HTMLTemplateElement;
+  const cardContainer = document.getElementById(
+    "card-container",
+  ) as HTMLDivElement;
+  const template = document.getElementById(
+    "card-template",
+  ) as HTMLTemplateElement;
 
   // Clear existing data
   tbody.innerHTML = "";
@@ -145,7 +161,10 @@ function displayData(data: College[]) {
   const tableFrag = document.createDocumentFragment();
   data.forEach((item, index) => {
     const tr = document.createElement("tr");
-    if (index % 2 === 0) {tr.classList.add("bg-zinc-100");tr.classList.add("dark:bg-zinc-900");}
+    if (index % 2 === 0) {
+      tr.classList.add("bg-zinc-100");
+      tr.classList.add("dark:bg-zinc-900");
+    }
     tr.classList.add("hover:bg-blue-50");
     tr.classList.add("dark:hover:bg-slate-800");
     tr.classList.add("toggle-bg-50-hover");
@@ -162,7 +181,8 @@ function displayData(data: College[]) {
   data.forEach((item) => {
     const clone = template.content.cloneNode(true) as DocumentFragment;
     (clone.querySelector("#college") as HTMLElement).textContent = item.college;
-    (clone.querySelector("#score") as HTMLElement).textContent = item.score.toFixed(6);
+    (clone.querySelector("#score") as HTMLElement).textContent =
+      item.score.toFixed(6);
     cardFrag.appendChild(clone);
   });
   cardContainer.appendChild(cardFrag);
@@ -173,27 +193,31 @@ function displayData(data: College[]) {
 
 //#region Scroll to top button logic
 // Reference to the button
-const topButton = document.getElementById("top-button") as HTMLButtonElement | null
+const topButton = document.getElementById(
+  "top-button",
+) as HTMLButtonElement | null;
 // Define scroll observer and its callback
-const scrollObserver = new IntersectionObserver(HandleIntersection)
+const scrollObserver = new IntersectionObserver(HandleIntersection);
 // Start observing if the score display label is not null
-scoreDisplay ? scrollObserver.observe(scoreDisplay) : console.error("scoreDisplay wasn't found. Observer failed.");
-topButton?.addEventListener("click", ScrollToTop)
+scoreDisplay
+  ? scrollObserver.observe(scoreDisplay)
+  : console.error("scoreDisplay wasn't found. Observer failed.");
+topButton?.addEventListener("click", ScrollToTop);
 
 // A function to handle filters appearing and disappearing (callback in scrollObserver)
 function HandleIntersection(entries: IntersectionObserverEntry[]) {
   if (!entries[0].isIntersecting && entries[0].boundingClientRect.bottom < 0) {
     // Filters disappeared. Show button.
-    topButton?.classList.toggle("translate-y-4", false)
-    topButton?.classList.toggle("opacity-0", false)
-    topButton?.classList.toggle("translate-y-0", true)
-    topButton?.classList.toggle("opacity-100", true)
+    topButton?.classList.toggle("translate-y-4", false);
+    topButton?.classList.toggle("opacity-0", false);
+    topButton?.classList.toggle("translate-y-0", true);
+    topButton?.classList.toggle("opacity-100", true);
   } else {
     // Filters appeared. Hide button.
-    topButton?.classList.toggle("translate-y-4", true)
-    topButton?.classList.toggle("opacity-0", true)
-    topButton?.classList.toggle("translate-y-0", false)
-    topButton?.classList.toggle("opacity-100", false)
+    topButton?.classList.toggle("translate-y-4", true);
+    topButton?.classList.toggle("opacity-0", true);
+    topButton?.classList.toggle("translate-y-0", false);
+    topButton?.classList.toggle("opacity-100", false);
   }
 }
 
@@ -201,10 +225,14 @@ function HandleIntersection(entries: IntersectionObserverEntry[]) {
 function ScrollToTop() {
   const scrollOptions = {
     top: 0,
-    behavior: "smooth"
-  } as ScrollToOptions
+    behavior: "smooth",
+  } as ScrollToOptions;
 
-  (document.scrollingElement || document.documentElement || document.body).scrollTo(scrollOptions)
+  (
+    document.scrollingElement ||
+    document.documentElement ||
+    document.body
+  ).scrollTo(scrollOptions);
 }
 
 //#endregion
