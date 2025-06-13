@@ -1,17 +1,80 @@
 //#region Type
+export type Category =
+    | "آداب"
+    | "أخرى"
+    | "ألسن"
+    | "إعلام"
+    | "اقتصاد وعلوم سياسية"
+    | "الاعاقة والتأهيل"
+    | "تجارة"
+    | "تخطيط عمراني"
+    | "تربية"
+    | "تمريض"
+    | "حاسبات ومعلومات"
+    | "حقوق"
+    | "صيدلة"
+    | "طب"
+    | "طب أسنان"
+    | "علاج طبيعي"
+    | "علوم"
+    | "فنون تطبيقية"
+    | "فنون جميلة"
+    | "هندسة";
+
+export type InstitutionType =
+    | "كلية"
+    | "انتساب موجه"
+    | "معهد";
+
+export type IconType =
+    | "medical_services"
+    | "dentistry"
+    | "fitness_center"
+    | "pharmacy"
+    | "engineering"
+    | "computer"
+    | "category"
+    | "science"
+    | "account_balance"
+    | "campaign"
+    | "language"
+    | "local_hospital"
+    | "gavel"
+    | "storefront"
+    | "location_city"
+    | "palette"
+    | "brush"
+    | "accessible"
+    | "school"
+    | "book";
+
 interface College {
-  college: string;
-  score: number;
+  college: string,
+  category: Category,
+  institution_type: InstitutionType,
+  score: number,
+  icon: IconType
 }
 //#endregion
 
 //#region Fetch JSON Data
 // Import boys and girls data JSON files
-import boysDataRaw from "./b_clean_data.json";
-import girlsDataRaw from "./g_clean_data.json";
+import boysDataRaw from "./b_updated_data.json";
+import girlsDataRaw from "./g_updated_data.json";
 
-const boysData: College[] = boysDataRaw;
-const girlsData: College[] = girlsDataRaw;
+// Helper function to cast string properties to the correct union types
+function mapToCollege(data: any[]): College[] {
+  return data.map(item => ({
+    college: item.college,
+    category: item.category as Category,
+    institution_type: item.institution_type as InstitutionType,
+    score: item.score,
+    icon: item.icon as IconType,
+  }));
+}
+
+const boysData: College[] = mapToCollege(boysDataRaw);
+const girlsData: College[] = mapToCollege(girlsDataRaw);
 //#endregion
 
 //#region Input Elements References
