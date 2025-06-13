@@ -1,0 +1,1556 @@
+[
+    {
+        "college": "طب القاهرة",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان القاهرة",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب الإسكندرية",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان الإسكندرية",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب عين شمس",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان عين شمس",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب سوهاج",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب الفيوم",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسيوط",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب طنطا",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان طنطا",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب المنصورة",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان المنصورة",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب الزقازيق",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب المنوفية بشبين الكوم",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بنها",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بني سويف",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب المنيا",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان السويس",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب فاقوس",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب دمياط",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب الاقصر",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب كفر الشيخ",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 410.0,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب حلوان",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.975882,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب قناة السويس بالإسماعيلية",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.975882,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بورسعيد",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.975882,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب السويس",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.951765,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب الوادي الجديد",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.927647,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب جنوب الوادي",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.927647,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب العريش",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.886111,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسوان",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 409.884771,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب أسنان الزقازيق",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.879412,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان قناة السويس بالإسماعيلية",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.871875,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان الفيوم",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.863333,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان كفر الشيخ",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.833856,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان بني سويف",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.807059,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان أسيوط",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.79098,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان المنيا",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.766863,
+        "icon": "dentistry"
+    },
+    {
+        "college": "طب أسنان جنوب الوادي",
+        "category": "طب أسنان",
+        "institution_type": "كلية",
+        "score": 409.758824,
+        "icon": "dentistry"
+    },
+    {
+        "college": "علاج طبيعي القاهرة",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.651215,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "علاج طبيعي كفر الشيخ",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.631871,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "صيدلة القاهرة",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 409.468072,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "علاج طبيعي بورسعيد",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.452328,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "علاج طبيعي بنها",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.359375,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "علاج طبيعي السويس",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.28183,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "علاج طبيعي قناة السويس",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 409.276471,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "علاج طبيعي بني سويف",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 408.546242,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "صيدلة و تصنيع دوائي كفر الشيخ",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "كلية الهندسة جامعة دمنهور",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "engineering"
+    },
+    {
+        "college": "حاسبات و ذكاء إصطناعي القاهرة رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "computer"
+    },
+    {
+        "college": "صيدلة المنصورة",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة المنصورة",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "engineering"
+    },
+    {
+        "college": "صيدلة الزقازيق",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة المنوفية",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة عين شمس",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة طنطا",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة أسيوط",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة جنوب الوادي",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة المنيا",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة حلوان",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة بترول وتعدين السويس",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "engineering"
+    },
+    {
+        "college": "صيدلة بني سويف",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة قناة السويس بالإسماعيلية",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة القاهرة",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "engineering"
+    },
+    {
+        "college": "صيدلة الإسكندرية",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة الإسكندرية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "engineering"
+    },
+    {
+        "college": "صيدلة الفيوم",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة دمنهور",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "علاج طبيعي جنوب الوادي",
+        "category": "علاج طبيعي",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "fitness_center"
+    },
+    {
+        "college": "صيدلة بورسعيد",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.925882,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة مدينة السادات",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.925882,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة الزقازيق",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.880327,
+        "icon": "engineering"
+    },
+    {
+        "college": "صيدلة ج الوادي الجديد",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.877647,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "صيدلة سوهاج",
+        "category": "صيدلة",
+        "institution_type": "كلية",
+        "score": 407.829412,
+        "icon": "pharmacy"
+    },
+    {
+        "college": "هندسة عين شمس",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.805294,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة إلكترونية المنوفية بمنوف",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.777827,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة بني سويف",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.684706,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة كفر الشيخ",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.507843,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة بنها بشبرا",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 407.44085,
+        "icon": "engineering"
+    },
+    {
+        "college": "حاسبات و علوم البيانات الإسكندرية رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 407.225131,
+        "icon": "computer"
+    },
+    {
+        "college": "هندسة طنطا",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 406.882292,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة الطاقة أسوان",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 406.687843,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة بنها",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة دمياط",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة حلوان بالمطرية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة حلوان",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة المنوفية بشبين الكوم",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة المنيا",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة بور سعيد",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "هندسة أسيوط",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "حاسبات ومعلومات عين شمس رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات المنصورة رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات الزقازيق رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.575752,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات دمنهور بالنوبارية رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.571397,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات و ذكاء إصطناعي حلوان رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات المنيا رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات دمياط رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات و ذكاء إصطناعي بنها رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات المنوفية بشبين الكوم رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات سوهاج رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات طنطا رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات كفر الشيخ رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.756209,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات و ذكاء إصطناعي جنوب الوادي فرع الغردقة رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.602794,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات وذكاء اصطناعي السادات رياضة",
+        "category": "أخرى",
+        "institution_type": "كلية",
+        "score": 403.519722,
+        "icon": "category"
+    },
+    {
+        "college": "ذكاء إصطناعي المنوفية شبين الكوم رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 403.02598,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات و معلومات العريش رياضة",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 401.992188,
+        "icon": "science"
+    },
+    {
+        "college": "حاسبات وذكاء اصطناعي مطروح رياضة",
+        "category": "أخرى",
+        "institution_type": "كلية",
+        "score": 401.8,
+        "icon": "category"
+    },
+    {
+        "college": "حاسبات ومعلومات قناة السويس بالإسماعيلية رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 401.8,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات السويس رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 401.8,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات الفيوم رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 401.633521,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات بني سويف رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 400.804812,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات أسيوط رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 399.75,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات الأقصر رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 399.564667,
+        "icon": "computer"
+    },
+    {
+        "college": "حاسبات ومعلومات قنا رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 399.417377,
+        "icon": "computer"
+    },
+    {
+        "college": "الذكاء الاصطناعى كفر الشيخ رياضة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "كلية",
+        "score": 405.609918,
+        "icon": "computer"
+    },
+    {
+        "college": "طب بيطري الإسكندرية",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري القاهرة",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 407.95,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري كفر الشيخ",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 407.472672,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري عين شمس",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 407.454248,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري المنصورة",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري المنوفية",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري دمنهور",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 404.715221,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري الزقازيق",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري بنها",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 403.801765,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري أسوان",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 397.7,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري مدينة السادات",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 395.65,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري المنيا",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 395.65,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري أسيوط",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 394.326042,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري قناة السويس بالإسماعيلية",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 388.799248,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري بني سويف",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 387.128766,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري العريش",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 379.25,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري الوادي الجديد",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 377.2,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري مطروح",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 375.15,
+        "icon": "medical_services"
+    },
+    {
+        "college": "طب بيطري جنوب الوادي",
+        "category": "طب",
+        "institution_type": "كلية",
+        "score": 374.975147,
+        "icon": "medical_services"
+    },
+    {
+        "college": "اقتصاد وعلوم سياسية القاهرة",
+        "category": "اقتصاد وعلوم سياسية",
+        "institution_type": "كلية",
+        "score": 397.7,
+        "icon": "account_balance"
+    },
+    {
+        "college": "الدراسات الاقتصادية والعلوم السياسية الإسكندرية",
+        "category": "اقتصاد وعلوم سياسية",
+        "institution_type": "كلية",
+        "score": 395.309338,
+        "icon": "account_balance"
+    },
+    {
+        "college": "سياسة واقتصاد السويس",
+        "category": "اقتصاد وعلوم سياسية",
+        "institution_type": "كلية",
+        "score": 387.45,
+        "icon": "account_balance"
+    },
+    {
+        "college": "سياسة واقتصاد بني سويف",
+        "category": "اقتصاد وعلوم سياسية",
+        "institution_type": "كلية",
+        "score": 385.021822,
+        "icon": "account_balance"
+    },
+    {
+        "college": "إعلام القاهرة",
+        "category": "إعلام",
+        "institution_type": "كلية",
+        "score": 401.649265,
+        "icon": "campaign"
+    },
+    {
+        "college": "إعلام عين شمس",
+        "category": "إعلام",
+        "institution_type": "كلية",
+        "score": 400.942484,
+        "icon": "campaign"
+    },
+    {
+        "college": "إعلام بني سويف",
+        "category": "إعلام",
+        "institution_type": "كلية",
+        "score": 389.3975,
+        "icon": "campaign"
+    },
+    {
+        "college": "إعلام وتكنولوجيا اتصال السويس",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 377.2,
+        "icon": "engineering"
+    },
+    {
+        "college": "ألسن كفر الشيخ",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن عين شمس",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 401.8,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن قناة السويس بالإسماعيلية",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 401.293529,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن الفيوم",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 397.7,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن أسوان",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 395.65,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن الأقصر",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 393.6,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن بني سويف",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 393.19201,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن المنيا",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 389.14058,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن جنوب الوادي فرع الغردقة",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 388.803603,
+        "icon": "language"
+    },
+    {
+        "college": "ألسن سوهاج",
+        "category": "ألسن",
+        "institution_type": "كلية",
+        "score": 387.45,
+        "icon": "language"
+    },
+    {
+        "college": "علوم القاهرة",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 397.346275,
+        "icon": "science"
+    },
+    {
+        "college": "علوم البترول والتعدين مطروح",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 397.7,
+        "icon": "science"
+    },
+    {
+        "college": "علوم البترول والتعدين مطروح - علوم",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 397.076626,
+        "icon": "science"
+    },
+    {
+        "college": "علوم عين شمس",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 359.134208,
+        "icon": "science"
+    },
+    {
+        "college": "علوم التغذية حلوان",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 355.8321,
+        "icon": "science"
+    },
+    {
+        "college": "علوم المنصورة",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 353.151691,
+        "icon": "science"
+    },
+    {
+        "college": "علوم حلوان",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 344.4,
+        "icon": "science"
+    },
+    {
+        "college": "علوم كفر الشيخ",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 334.15,
+        "icon": "science"
+    },
+    {
+        "college": "علوم طنطا",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 300.493154,
+        "icon": "science"
+    },
+    {
+        "college": "تمريض طنطا",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 398.481144,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض القاهرة",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 375.15,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض المنصورة",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 385.4,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض بور سعيد",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 368.903529,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض دمياط",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 368.597704,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض حلوان",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 354.625882,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض عين شمس",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 353.496875,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض الزقازيق",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 332.92201,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض كفر الشيخ",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 317.683342,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض بنها",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 304.774371,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "تمريض الإسكندرية",
+        "category": "تمريض",
+        "institution_type": "كلية",
+        "score": 264.670074,
+        "icon": "local_hospital"
+    },
+    {
+        "college": "حقوق انتساب موجه المنصورة",
+        "category": "حقوق",
+        "institution_type": "انتساب موجه",
+        "score": 302.311356,
+        "icon": "gavel"
+    },
+    {
+        "college": "تجارة انتساب موجه عين شمس",
+        "category": "تجارة",
+        "institution_type": "انتساب موجه",
+        "score": 350.426732,
+        "icon": "storefront"
+    },
+    {
+        "college": "تجارة انتساب موجه المنصورة",
+        "category": "تجارة",
+        "institution_type": "انتساب موجه",
+        "score": 305.798492,
+        "icon": "storefront"
+    },
+    {
+        "college": "آداب انتساب موجه القاهرة",
+        "category": "آداب",
+        "institution_type": "انتساب موجه",
+        "score": 384.759375,
+        "icon": "book"
+    },
+    {
+        "college": "آداب انتساب موجه المنصورة",
+        "category": "آداب",
+        "institution_type": "انتساب موجه",
+        "score": 319.657974,
+        "icon": "book"
+    },
+    {
+        "college": "آداب انتساب موجه الفيوم",
+        "category": "آداب",
+        "institution_type": "انتساب موجه",
+        "score": 309.29174,
+        "icon": "book"
+    },
+    {
+        "college": "آداب انتساب موجه بنات عين شمس",
+        "category": "آداب",
+        "institution_type": "انتساب موجه",
+        "score": 287.419044,
+        "icon": "book"
+    },
+    {
+        "college": "تخطيط عمراني القاهرة",
+        "category": "تخطيط عمراني",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "location_city"
+    },
+    {
+        "college": "الملاحة وتكنولوجيا الفضاء بني سويف",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 371.198056,
+        "icon": "engineering"
+    },
+    {
+        "college": "العلوم الصحية التطبيقية المنوفية",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 407.858889,
+        "icon": "science"
+    },
+    {
+        "college": "العلوم الصحية التطبيقية بني سويف",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 404.924575,
+        "icon": "science"
+    },
+    {
+        "college": "كلية تكنولوجيا العلوم الصحية 6 أكتوبر التكنولوجية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 389.5,
+        "icon": "engineering"
+    },
+    {
+        "college": "كلية تكنولوجيا العلوم الصحية برج العرب التكنولوجية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 366.829412,
+        "icon": "engineering"
+    },
+    {
+        "college": "كلية تكنولوجيا الصناعة و الطاقة بالقاهرة جامعة مصر الدولية التكنولوجية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 395.39375,
+        "icon": "engineering"
+    },
+    {
+        "college": "كلية تكنولوجيا الصناعة والطاقة ج القاهرة الجديدة التكنولوجية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 373.1,
+        "icon": "engineering"
+    },
+    {
+        "college": "كلية تكنولوجيا الصناعة والطاقة 6 أكتوبر التكنولوجية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 371.828464,
+        "icon": "engineering"
+    },
+    {
+        "college": "كلية تكنولوجيا الصناعة والطاقة 6 أكتوبر التكنولوجية علوم",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 339.394248,
+        "icon": "engineering"
+    },
+    {
+        "college": "التكنولوجيا والتعليم الصناعي حلوان",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 334.642737,
+        "icon": "engineering"
+    },
+    {
+        "college": "فنون جميلة (عمارة) المنصورة",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 405.9,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون جميلة (عمارة) حلوان",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون جميلة (عمارة) الإسكندرية",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 403.85,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون جميلة (عمارة) أسيوط",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 399.449869,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون جميلة (عمارة) المنيا",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 393.508889,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون جميلة (فنون) حلوان",
+        "category": "فنون جميلة",
+        "institution_type": "كلية",
+        "score": 389.475882,
+        "icon": "palette"
+    },
+    {
+        "college": "فنون تطبيقية طنطا",
+        "category": "فنون تطبيقية",
+        "institution_type": "كلية",
+        "score": 350.194265,
+        "icon": "brush"
+    },
+    {
+        "college": "فنون تطبيقية حلوان",
+        "category": "فنون تطبيقية",
+        "institution_type": "كلية",
+        "score": 294.484161,
+        "icon": "brush"
+    },
+    {
+        "college": "دار العلوم أسوان",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 405.33558,
+        "icon": "science"
+    },
+    {
+        "college": "دار العلوم القاهرة",
+        "category": "علوم",
+        "institution_type": "كلية",
+        "score": 364.736201,
+        "icon": "science"
+    },
+    {
+        "college": "الاعاقة والتأهيل الزقازيق",
+        "category": "الاعاقة والتأهيل",
+        "institution_type": "كلية",
+        "score": 370.18143,
+        "icon": "accessible"
+    },
+    {
+        "college": "تربية (طفولة) كفر الشيخ",
+        "category": "تربية",
+        "institution_type": "كلية",
+        "score": 368.316681,
+        "icon": "school"
+    },
+    {
+        "college": "معهد العبور العالي للهندسه والتكنولوجيا بمصروفات",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 405.9,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد العالى للهندسة والتكنولوجيا بكنج مريوط",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 401.8,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد العالى للهندسة والتكنولوجيا بالزقازيق",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 399.75,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد الصفوة العالي هندسة وتكنولوجيا بالقليوبية",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 395.429592,
+        "icon": "engineering"
+    },
+    {
+        "college": "المجمع التكنولوجي المتكامل بالسلام",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 393.6,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد أكتوبر العالي للهندسه والتكنولوجيا م 6 اكتوبر بمصروفات",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 391.525882,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد عالي كندي تكنولوجيا هندسة ت.خامس",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 389.5,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد التكنولوجي العالي بالسادس من أكتوبر",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 376.6875,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد تكنولوجي عالي العاشر من رمضان شعبة (هندسة) بمصروفات",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 375.15,
+        "icon": "engineering"
+    },
+    {
+        "college": "المصرية الصينية للتكنولوجيا قناة السويس بالإسماعيلية",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 373.1,
+        "icon": "engineering"
+    },
+    {
+        "college": "العالي للهندسة والتكنولوجيا التجمع الخامس",
+        "category": "هندسة",
+        "institution_type": "كلية",
+        "score": 365.289567,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد الجزيرة العالى للهندسة والتكنولوجيا بالمقطم",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 362.85,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد الكندى العالى للهندسة 6 اكتوبر",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 361.088072,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد الكندي العالي للحاسب الآلي بالتجمع الخامس القاهرة الجديدة",
+        "category": "حاسبات ومعلومات",
+        "institution_type": "معهد",
+        "score": 358.621875,
+        "icon": "computer"
+    },
+    {
+        "college": "معهد هندسة وتكنولوجيا الطيران إمبابة جيزة بمصروفات",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 353.625,
+        "icon": "engineering"
+    },
+    {
+        "college": "المعهد العالي للهندسة والتكنولوجيا بدمياط الجديدة",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 346.695196,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد عالي هندسه 6 اكتوبر بمصروفات",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 336.108554,
+        "icon": "engineering"
+    },
+    {
+        "college": "الاهرامات العالي للهندسة والتكنولوجيا -6 اكتوبر",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 333.955719,
+        "icon": "engineering"
+    },
+    {
+        "college": "معهد عالي هندسة وتكنولوجيا العريش",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 329.658758,
+        "icon": "engineering"
+    },
+    {
+        "college": "المدينةالعالي للإدارة والتكنولوجيا شبرامنت ش نظم معلومات إدارية",
+        "category": "هندسة",
+        "institution_type": "معهد",
+        "score": 310.444698,
+        "icon": "engineering"
+    }
+]
