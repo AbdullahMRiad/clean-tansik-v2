@@ -232,6 +232,7 @@ function displayData(data: College[]) {
     tr.classList.add("dark:hover:bg-slate-800");
     tr.classList.add("toggle-bg-50-hover");
     tr.innerHTML = `
+            <td class="border border-gray-400/20 p-2 material-symbols-outlined">${item.icon}</td>
             <td class="border border-gray-400/20 p-2">${item.college}</td>
             <td class="border border-gray-400/20 p-2">${item.score.toFixed(6)}</td>
         `;
