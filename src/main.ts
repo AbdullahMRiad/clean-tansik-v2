@@ -182,7 +182,7 @@ topButton?.addEventListener("click", ScrollToTop)
 
 // A function to handle filters appearing and disappearing (callback in scrollObserver)
 function HandleIntersection(entries: IntersectionObserverEntry[]) {
-  if (!entries[0].isIntersecting) {
+  if (!entries[0].isIntersecting && entries[0].boundingClientRect.bottom < 0) {
     // Filters disappeared. Show button.
     topButton?.classList.toggle("translate-y-4", false)
     topButton?.classList.toggle("opacity-0", false)
