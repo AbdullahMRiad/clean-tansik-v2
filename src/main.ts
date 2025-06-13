@@ -170,3 +170,37 @@ function displayData(data: College[]) {
   setTheme(); // Update theme for new elements
 }
 //#endregion
+
+//#region Scroll to top button logic
+// Reference to the button
+const topButton = document.getElementById("top-button") as HTMLButtonElement | null
+// Define scroll observer and its callback
+const scrollObserver = new IntersectionObserver(HandleIntersection)
+// Start observing if the score display label is not null
+scoreDisplay ? scrollObserver.observe(scoreDisplay) : console.error("scoreDisplay wasn't found. Observer failed.");
+topButton?.addEventListener("click", ScrollToTop)
+
+// A function to handle filters appearing and disappearing (callback in scrollObserver)
+function HandleIntersection(entries: IntersectionObserverEntry[]) {
+  if (!entries[0].isIntersecting) {
+    // Filters disappeared. Show button.
+    topButton?.classList.toggle("translate-y-20", false)
+    topButton?.classList.toggle("translate-y-0", true)
+  } else {
+    // Filters appeared. Hide button.
+    topButton?.classList.toggle("translate-y-20", true)
+    topButton?.classList.toggle("translate-y-0", false)
+  }
+}
+
+// A function to handle scroll to top button click
+function ScrollToTop() {
+  const scrollOptions = {
+    top: 0,
+    behavior: "smooth"
+  } as ScrollToOptions
+
+  (document.scrollingElement || document.documentElement || document.body).scrollTo(scrollOptions)
+}
+
+//#endregion
