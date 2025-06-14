@@ -110,6 +110,11 @@ document.querySelectorAll('input[name="gender"]').forEach((input) =>
 [calcScoreInput, schoolScoreInput, quduratScoreInput, collegeNameInput].forEach(
   (input) => input?.addEventListener("input", filterAndDisplay),
 );
+
+// Listen for changes on category checkboxes
+document.querySelectorAll('input[name="category"]').forEach((input) =>
+  input.addEventListener("change", filterAndDisplay)
+);
 //#endregion
 
 //#region Theme Switching Function
@@ -206,6 +211,11 @@ function filterAndDisplay() {
   const school: number = parseFloat(schoolScoreInput?.value ?? "");
   const qudurat: number = parseFloat(quduratScoreInput?.value ?? "");
 
+  // Get checked categories
+  const checkedCategories = Array.from(
+    document.querySelectorAll<HTMLInputElement>('input[name="category"]:checked')
+  ).map((el) => el.value);
+
   let threshold = null;
 
   // Calculate threshold score if school and qudurat inputs are valid numbers
@@ -226,6 +236,9 @@ function filterAndDisplay() {
       return false;
     if (!isNaN(calcScoreMin) && item.score > calcScoreMin + 1e-6) return false;
     if (threshold !== null && item.score > threshold + 1e-6) return false;
+    // Filter by category if any are checked
+    if (checkedCategories.length > 0 && !checkedCategories.includes(item.category))
+      return false;
     return true;
   });
 
