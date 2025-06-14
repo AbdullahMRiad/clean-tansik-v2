@@ -30,7 +30,7 @@ export type IconType =
     | "medical_services"
     | "dentistry"
     | "fitness_center"
-    | "pharmacy"
+    | "pill"
     | "engineering"
     | "computer"
     | "category"
