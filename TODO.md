@@ -6,4 +6,4 @@
 - [x] Add filtering by study field
     - [x] Categorize colleges in the database
     - [x] Come up with icons for each field
-- [ ] Add filtering by institution type
+- [x] Add filtering by institution type
