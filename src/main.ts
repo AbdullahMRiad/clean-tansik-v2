@@ -317,11 +317,13 @@ const topButton = document.getElementById(
 const tableTopButton = document.getElementById(
   "table-top-button",
 ) as HTMLButtonElement | null;
+// Reference to the last filter section
+const lastFilter = document.getElementById("last-filter")
 // Define scroll observer and its callback
 const scrollObserver = new IntersectionObserver(HandleIntersection);
 // Start observing if the score display label is not null
-scoreDisplay
-  ? scrollObserver.observe(scoreDisplay)
+lastFilter
+  ? scrollObserver.observe(lastFilter)
   : console.error("scoreDisplay wasn't found. Observer failed.");
 
 // Listen for click event on the button
