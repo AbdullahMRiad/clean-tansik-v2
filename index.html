@@ -252,87 +252,167 @@
           class="toggle-bg-200 toggle-ring-400 mt-3 h-min rounded-3xl bg-blue-200 p-3 shadow-md ring-2 shadow-black/20 ring-blue-400 dark:bg-slate-800 dark:ring-slate-700"
         >
           <!-- Study Field Checkboxes -->
-          <div class="flex flex-col gap-2">
-            <label class="mr-4 mb-2">مجال الدراسة</label>
+          <label class="mr-4">مجال الدراسة</label>
+          <div class="flex flex-wrap gap-2 mt-2">
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="طب" />
-              طب
+              <input type="checkbox" name="category" value="طب" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                طب
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="طب أسنان" />
-              طب أسنان
+              <input type="checkbox" name="category" value="طب أسنان" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                طب أسنان
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="علاج طبيعي" />
-              علاج طبيعي
+              <input type="checkbox" name="category" value="علاج طبيعي" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                علاج طبيعي
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="صيدلة" />
-              صيدلة
+              <input type="checkbox" name="category" value="صيدلة" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                صيدلة
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="هندسة" />
-              هندسة
+              <input type="checkbox" name="category" value="هندسة" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                هندسة
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="حاسبات ومعلومات" />
-              حاسبات ومعلومات
+              <input type="checkbox" name="category" value="حاسبات ومعلومات" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                حاسبات ومعلومات
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="اقتصاد وعلوم سياسية" />
-              اقتصاد وعلوم سياسية
+              <input type="checkbox" name="category" value="اقتصاد وعلوم سياسية" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                اقتصاد وعلوم سياسية
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="إعلام" />
-              إعلام
+              <input type="checkbox" name="category" value="إعلام" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                إعلام
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="ألسن" />
-              ألسن
+              <input type="checkbox" name="category" value="ألسن" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                ألسن
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="علوم" />
-              علوم
+              <input type="checkbox" name="category" value="علوم" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                علوم
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="تمريض" />
-              تمريض
+              <input type="checkbox" name="category" value="تمريض" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                تمريض
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="حقوق" />
-              حقوق
+              <input type="checkbox" name="category" value="حقوق" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                حقوق
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="تجارة" />
-              تجارة
+              <input type="checkbox" name="category" value="تجارة" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                تجارة
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="آداب" />
-              آداب
+              <input type="checkbox" name="category" value="آداب" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                آداب
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="تخطيط عمراني" />
-              تخطيط عمراني
+              <input type="checkbox" name="category" value="تخطيط عمراني" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                تخطيط عمراني
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="فنون جميلة" />
-              فنون جميلة
+              <input type="checkbox" name="category" value="فنون جميلة" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                فنون جميلة
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="فنون تطبيقية" />
-              فنون تطبيقية
+              <input type="checkbox" name="category" value="فنون تطبيقية" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                فنون تطبيقية
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="الاعاقة والتأهيل" />
-              الاعاقة والتأهيل
+              <input type="checkbox" name="category" value="الاعاقة والتأهيل" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                الاعاقة والتأهيل
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="تربية" />
-              تربية
+              <input type="checkbox" name="category" value="تربية" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                تربية
+              </span>
             </label>
             <label class="flex items-center gap-2">
-              <input type="checkbox" name="category" value="أخرى" />
-              أخرى
+              <input type="checkbox" name="category" value="أخرى" class="peer hidden" />
+              <span
+                class="cursor-pointer toggle-chip rounded-4xl bg-blue-200 px-3 py-1 text-sm font-bold text-black shadow-md ring-2 ring-blue-400 transition-all hover:bg-blue-400 hover:text-white active:scale-95 active:bg-blue-700 dark:bg-slate-800 dark:text-white dark:ring-slate-700 dark:hover:bg-slate-700 dark:active:bg-slate-900 peer-checked:bg-blue-400 peer-checked:text-white dark:peer-checked:bg-slate-700"
+              >
+                أخرى
+              </span>
             </label>
           </div>
         </div>

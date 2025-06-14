@@ -160,6 +160,34 @@ function setTheme() {
     element.classList.toggle("bg-red-50", !isBoys);
     element.classList.toggle("dark:bg-stone-950", !isBoys);
   });
+
+  // Special handler for chips
+  document.querySelectorAll(".toggle-chip").forEach((element) => {
+    element.classList.toggle("bg-blue-200", isBoys);
+    element.classList.toggle("dark:bg-slate-800", isBoys);
+    element.classList.toggle("bg-red-200", !isBoys);
+    element.classList.toggle("dark:bg-stone-800", !isBoys);
+
+    element.classList.toggle("ring-blue-400", isBoys);
+    element.classList.toggle("dark:ring-slate-700", isBoys);
+    element.classList.toggle("ring-red-400", !isBoys);
+    element.classList.toggle("dark:ring-stone-700", !isBoys);
+
+    element.classList.toggle("hover:bg-blue-400", isBoys);
+    element.classList.toggle("dark:hover:bg-slate-700", isBoys);
+    element.classList.toggle("hover:bg-red-400", !isBoys);
+    element.classList.toggle("dark:hover:bg-stone-700", !isBoys);
+
+    element.classList.toggle("active:bg-blue-700", isBoys);
+    element.classList.toggle("dark:active:bg-slate-900", isBoys);
+    element.classList.toggle("active:bg-red-700", !isBoys);
+    element.classList.toggle("dark:active:bg-stone-900", !isBoys);
+
+    element.classList.toggle("peer-checked:bg-blue-400", isBoys);
+    element.classList.toggle("dark:peer-checked:bg-slate-700", isBoys);
+    element.classList.toggle("peer-checked:bg-red-400", !isBoys);
+    element.classList.toggle("dark:peer-checked:bg-stone-700", !isBoys);
+  });
 }
 //#endregion
 
