@@ -115,6 +115,10 @@ document.querySelectorAll('input[name="gender"]').forEach((input) =>
 document.querySelectorAll('input[name="category"]').forEach((input) =>
   input.addEventListener("change", filterAndDisplay)
 );
+// Listen for changes on institution type checkboxes
+document.querySelectorAll('input[name="type"]').forEach((input) =>
+  input.addEventListener("change", filterAndDisplay)
+);
 //#endregion
 
 //#region Theme Switching Function
@@ -216,6 +220,11 @@ function filterAndDisplay() {
     document.querySelectorAll<HTMLInputElement>('input[name="category"]:checked')
   ).map((el) => el.value);
 
+  // Get checked institution types
+  const checkedTypes = Array.from(
+    document.querySelectorAll<HTMLInputElement>('input[name="type"]:checked')
+  ).map((el) => el.value);
+
   let threshold = null;
 
   // Calculate threshold score if school and qudurat inputs are valid numbers
@@ -238,6 +247,9 @@ function filterAndDisplay() {
     if (threshold !== null && item.score > threshold + 1e-6) return false;
     // Filter by category if any are checked
     if (checkedCategories.length > 0 && !checkedCategories.includes(item.category))
+      return false;
+    // Filter by institution type if any are checked
+    if (checkedTypes.length > 0 && !checkedTypes.includes(item.institution_type))
       return false;
     return true;
   });
