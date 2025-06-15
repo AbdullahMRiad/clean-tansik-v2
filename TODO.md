@@ -7,4 +7,4 @@
     - [x] Categorize colleges in the database
     - [x] Come up with icons for each field
 - [x] Add filtering by institution type
-- [ ] Add theme switcher
+- [x] Add theme switcher
