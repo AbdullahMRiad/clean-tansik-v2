@@ -69,15 +69,16 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .scrollbar {
-    scrollbar-color: var(--color-zinc-400) var(--color-zinc-700);
-  }
-  .scrollbar::-webkit-scrollbar-track {
-    background: var(--color-zinc-700);
-    border-radius: 24px;
-  }
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: var(--color-zinc-400);
-  }
+.dark .scrollbar {
+  scrollbar-color: var(--color-zinc-400) var(--color-zinc-700);
+  transition: all 150ms ease-in-out;
+}
+.dark .scrollbar::-webkit-scrollbar-track {
+  background: var(--color-zinc-700);
+  border-radius: 24px;
+  transition: all 150ms ease-in-out;
+}
+.dark .scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-zinc-400);
+  transition: all 150ms ease-in-out;
 }
