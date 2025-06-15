@@ -3,6 +3,17 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --default-font-family: "Cairo";
+  --color-stone-50:  oklch(0.98 0.00 10);
+  --color-stone-100: oklch(0.97 0.01 10);
+  --color-stone-200: oklch(0.93 0.01 18);
+  --color-stone-300: oklch(0.87 0.02 15);
+  --color-stone-400: oklch(0.71 0.04 19);
+  --color-stone-500: oklch(0.55 0.04 19);
+  --color-stone-600: oklch(0.45 0.04 19);
+  --color-stone-700: oklch(0.37 0.04 19);
+  --color-stone-800: oklch(0.28 0.04 22);
+  --color-stone-900: oklch(0.21 0.04 28);
+  --color-stone-950: oklch(0.13 0.04 27);
 }
 
 @utility debug {
