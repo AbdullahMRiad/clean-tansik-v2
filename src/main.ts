@@ -7,9 +7,13 @@ import { setTheme } from "./theme";
 import { filterAndDisplay } from "./filter";
 import { setupScrollButtons } from "./scroll";
 import * as dom from "./dom";
+import * as dark_mode from "./dark_mode";
 
 // Initialize first data view
 filterAndDisplay();
+
+// Switch dark mode based on preferences
+dark_mode.getDarkMode()
 
 // Event Listeners Setup
 // Listen for gender radio button changes to update theme and filtered data
@@ -31,6 +35,9 @@ document.querySelectorAll('input[name="category"]').forEach((input) =>
 document.querySelectorAll('input[name="type"]').forEach((input) =>
   input.addEventListener("change", filterAndDisplay)
 );
+
+// Listen for clicks on the dark mode toggle
+dom.darkModeToggle?.addEventListener("click", () => { dark_mode.setDarkMode(); })
 
 // Setup scroll to top buttons
 setupScrollButtons();

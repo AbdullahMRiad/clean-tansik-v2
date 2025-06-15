@@ -10,3 +10,4 @@ export const template = document.getElementById("card-template") as HTMLTemplate
 export const topButton = document.getElementById("top-button") as HTMLButtonElement | null;
 export const tableTopButton = document.getElementById("table-top-button") as HTMLButtonElement | null;
 export const lastFilter = document.getElementById("last-filter");
+export const darkModeToggle = document.getElementById("dark-toggle")
