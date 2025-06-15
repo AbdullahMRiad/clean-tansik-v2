@@ -1,6 +1,6 @@
-import { boysData, girlsData } from "./data";
+import { boysData, girlsData } from "../data/data";
 import { calcScoreInput, schoolScoreInput, quduratScoreInput, collegeNameInput } from "./dom";
-import { displayData } from "./display";
+import { displayData } from "../services/display";
 import { scoreDisplay } from "./dom";
 
 export function filterAndDisplay() {

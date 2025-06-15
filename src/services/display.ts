@@ -1,6 +1,6 @@
 import { setTheme } from "./theme";
-import { tbody, cardContainer, template } from "./dom";
-import type { College } from "./types";
+import { tbody, cardContainer, template } from "../utils/dom";
+import type { College } from "../types/types";
 
 export function displayData(data: College[]) {
   tbody.innerHTML = "";
