@@ -8,3 +8,5 @@
     - [x] Come up with icons for each field
 - [x] Add filtering by institution type
 - [x] Add theme switcher
+- [x] Fix veterinary appearing as medicine
+- [ ] Fix sorting not working properly when selecting multiple categories
