@@ -32,7 +32,7 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 410.0,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "طب عين شمس",
@@ -207,7 +207,7 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.975882,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "طب حلوان",
@@ -326,7 +326,7 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.906209,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "علاج طبيعي السويس",
@@ -340,21 +340,21 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.903194,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة طنطا",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.900515,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة القاهرة",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.8975,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "علاج طبيعي بني سويف",
@@ -382,14 +382,14 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.879412,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة عين شمس",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.876397,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "علاج طبيعي جنوب الوادي",
@@ -403,84 +403,84 @@
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.829167,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة الزقازيق",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.807059,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة قناة السويس بالإسماعيلية",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.782941,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة المنوفية",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.782941,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة بورسعيد",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.758824,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة الفيوم",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.728676,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة أسيوط",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.721307,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة مدينة السادات",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.673072,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة بني سويف",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.658333,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة سوهاج",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.571242,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة جنوب الوادي",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.570572,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "صيدلة ج الوادي الجديد",
         "category": "صيدلة",
         "institution_type": "كلية",
         "score": 409.541765,
-        "icon": "pill"
+        "icon": "pharmacy"
     },
     {
         "college": "كلية الهندسة جامعة دمنهور",
@@ -533,10 +533,10 @@
     },
     {
         "college": "طب بيطري الإسكندرية",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 407.95,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "هندسة عين شمس",
@@ -561,10 +561,10 @@
     },
     {
         "college": "طب بيطري القاهرة",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 407.95,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "هندسة كفر الشيخ",
@@ -694,17 +694,17 @@
     },
     {
         "college": "طب بيطري كفر الشيخ",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 407.472672,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "طب بيطري عين شمس",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 407.454248,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "هندسة سوهاج",
@@ -757,10 +757,10 @@
     },
     {
         "college": "طب بيطري المنصورة",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 405.9,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "حاسبات و ذكاء إصطناعي حلوان رياضة",
@@ -792,10 +792,10 @@
     },
     {
         "college": "طب بيطري المنوفية",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 405.9,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "الذكاء الاصطناعى كفر الشيخ رياضة",
@@ -834,10 +834,10 @@
     },
     {
         "college": "طب بيطري دمنهور",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 404.715221,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "فنون جميلة (عمارة) حلوان",
@@ -869,10 +869,10 @@
     },
     {
         "college": "طب بيطري الزقازيق",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 403.85,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "حاسبات ومعلومات سوهاج رياضة",
@@ -890,10 +890,10 @@
     },
     {
         "college": "طب بيطري بنها",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 403.801765,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "حاسبات ومعلومات كفر الشيخ رياضة",
@@ -911,7 +911,7 @@
     },
     {
         "college": "حاسبات وذكاء اصطناعي السادات رياضة",
-        "category": "حاسبات ومعلومات",
+        "category": "أخرى",
         "institution_type": "كلية",
         "score": 403.519722,
         "icon": "category"
@@ -932,7 +932,7 @@
     },
     {
         "college": "حاسبات وذكاء اصطناعي مطروح رياضة",
-        "category": "حاسبات ومعلومات",
+        "category": "أخرى",
         "institution_type": "كلية",
         "score": 401.8,
         "icon": "category"
@@ -1044,10 +1044,10 @@
     },
     {
         "college": "طب بيطري أسوان",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 397.7,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "ألسن الفيوم",
@@ -1093,17 +1093,17 @@
     },
     {
         "college": "طب بيطري مدينة السادات",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 395.65,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "طب بيطري المنيا",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 395.65,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "معهد الصفوة العالي هندسة وتكنولوجيا بالقليوبية",
@@ -1128,10 +1128,10 @@
     },
     {
         "college": "طب بيطري أسيوط",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 394.326042,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "المجمع التكنولوجي المتكامل بالسلام",
@@ -1212,10 +1212,10 @@
     },
     {
         "college": "طب بيطري قناة السويس بالإسماعيلية",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 388.799248,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "سياسة واقتصاد السويس",
@@ -1233,10 +1233,10 @@
     },
     {
         "college": "طب بيطري بني سويف",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 387.128766,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "تمريض المنصورة",
@@ -1268,10 +1268,10 @@
     },
     {
         "college": "طب بيطري العريش",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 379.25,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "إعلام وتكنولوجيا اتصال السويس",
@@ -1282,10 +1282,10 @@
     },
     {
         "college": "طب بيطري الوادي الجديد",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 377.2,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "المعهد التكنولوجي العالي بالسادس من أكتوبر",
@@ -1303,10 +1303,10 @@
     },
     {
         "college": "طب بيطري مطروح",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 375.15,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "تمريض القاهرة",
@@ -1317,10 +1317,10 @@
     },
     {
         "college": "طب بيطري جنوب الوادي",
-        "category": "طب",
+        "category": "طب بيطري",
         "institution_type": "كلية",
         "score": 374.975147,
-        "icon": "medical_services"
+        "icon": "pets"
     },
     {
         "college": "المصرية الصينية للتكنولوجيا قناة السويس بالإسماعيلية",
