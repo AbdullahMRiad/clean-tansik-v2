@@ -39,5 +39,9 @@ export function filterAndDisplay() {
       return false;
     return true;
   });
+
+  // Sort by score descending (highest first)
+  filtered.sort((a, b) => b.score - a.score);
+
   displayData(filtered);
 }
