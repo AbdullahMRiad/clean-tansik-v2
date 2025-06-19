@@ -911,10 +911,10 @@
     },
     {
         "college": "حاسبات وذكاء اصطناعي السادات رياضة",
-        "category": "أخرى",
+        "category": "حاسبات ومعلومات",
         "institution_type": "كلية",
         "score": 403.519722,
-        "icon": "category"
+        "icon": "computer"
     },
     {
         "college": "ذكاء إصطناعي المنوفية شبين الكوم رياضة",
@@ -932,10 +932,10 @@
     },
     {
         "college": "حاسبات وذكاء اصطناعي مطروح رياضة",
-        "category": "أخرى",
+        "category": "حاسبات ومعلومات",
         "institution_type": "كلية",
         "score": 401.8,
-        "icon": "category"
+        "icon": "computer"
     },
     {
         "college": "ألسن عين شمس",

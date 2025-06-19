@@ -725,7 +725,7 @@
         "category": "حاسبات ومعلومات",
         "institution_type": "كلية",
         "score": 403.519722,
-        "icon": "category"
+        "icon": "computer"
     },
     {
         "college": "ذكاء إصطناعي المنوفية شبين الكوم رياضة",
@@ -746,7 +746,7 @@
         "category": "حاسبات ومعلومات",
         "institution_type": "كلية",
         "score": 401.8,
-        "icon": "category"
+        "icon": "computer"
     },
     {
         "college": "حاسبات ومعلومات قناة السويس بالإسماعيلية رياضة",
@@ -1387,17 +1387,17 @@
     },
     {
         "college": "دار العلوم أسوان",
-        "category": "علوم",
+        "category": "آداب",
         "institution_type": "كلية",
         "score": 405.33558,
-        "icon": "science"
+        "icon": "book"
     },
     {
         "college": "دار العلوم القاهرة",
-        "category": "علوم",
+        "category": "آداب",
         "institution_type": "كلية",
         "score": 364.736201,
-        "icon": "science"
+        "icon": "book"
     },
     {
         "college": "الاعاقة والتأهيل الزقازيق",
