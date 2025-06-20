@@ -1,14 +1,15 @@
 import json
+import os
 
 # Define the data based on the last provided girls' data for testing the script logic
 # This script will be run twice, once for boys' data and once for girls' data.
 
 # --- Data for Boys (assuming this is the original data) ---
-with open("b_clean_data.json", "r", encoding="utf-8") as f:
+with open(os.path.join('output', 'b_clean_data.json'), "r", encoding="utf-8") as f:
     data_boys = json.load(f)
 
 # --- Data for Girls (assuming this is the new data) ---
-with open("g_clean_data.json", "r", encoding="utf-8") as f:
+with open(os.path.join('output', 'g_clean_data.json'), "r", encoding="utf-8") as f:
     data_girls = json.load(f)
 
 categories = {
@@ -80,7 +81,7 @@ def process_data(input_data, output_filename):
     print(f"Categorization complete. Output saved to {output_filename}")
 
 # Process boys' data
-process_data(data_boys, "categorized_colleges_boys.json")
+process_data(data_boys, os.path.join('output', 'categorized_colleges_boys.json'))
 
 # Process girls' data
-process_data(data_girls, "categorized_colleges_girls.json")
+process_data(data_girls, os.path.join('output', 'categorized_colleges_girls.json'))

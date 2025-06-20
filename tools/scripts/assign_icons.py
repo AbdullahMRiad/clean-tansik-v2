@@ -1,4 +1,5 @@
 import json
+import os
 
 # Define icons for each category using Material Symbols
 icons = {
@@ -45,10 +46,9 @@ def assign_icons_to_data(input_filename, output_filename):
 
     print(f"Icons assigned and saved to {output_filename}")
 
-# Process boys\" data
-assign_icons_to_data("categorized_colleges_boys.json", "categorized_colleges_boys_with_icons.json")
-
-# Process girls\" data
-assign_icons_to_data("categorized_colleges_girls.json", "categorized_colleges_girls_with_icons.json")
+# Process boys' data
+assign_icons_to_data(os.path.join('output', 'categorized_colleges_boys.json'), os.path.join('output', 'categorized_colleges_boys_with_icons.json'))
+# Process girls' data
+assign_icons_to_data(os.path.join('output', 'categorized_colleges_girls.json'), os.path.join('output', 'categorized_colleges_girls_with_icons.json'))
 
 
