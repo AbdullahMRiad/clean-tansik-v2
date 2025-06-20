@@ -10,4 +10,4 @@
 - [x] Add theme switcher
 - [x] Fix veterinary appearing as medicine
 - [x] Fix sorting not working properly when selecting multiple categories
-- [ ] Add stats
+- [x] Add stats
