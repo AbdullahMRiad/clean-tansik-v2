@@ -5,7 +5,14 @@ export function setupScrollButtons() {
   lastFilter
     ? scrollObserver.observe(lastFilter)
     : console.error("scoreDisplay wasn't found. Observer failed.");
-  topButton?.addEventListener("click", () => ScrollToTop());
+  topButton?.addEventListener("click", () => {
+    ScrollToTop();
+    // Remove focus/active state after tap to prevent sticky hover on mobile
+    topButton?.blur();
+  });
+  topButton?.addEventListener("touchend", () => {
+    topButton?.blur();
+  });
   tableTopButton?.addEventListener("click", () =>
     ScrollToTop(
       document.getElementById("main-content-area")
@@ -16,16 +23,16 @@ export function setupScrollButtons() {
 }
 
 function HandleIntersection(entries: IntersectionObserverEntry[]) {
-  if (!entries[0].isIntersecting && entries[0].boundingClientRect.bottom < 0) {
-    topButton?.classList.toggle("translate-y-4", false);
-    topButton?.classList.toggle("opacity-0", false);
-    topButton?.classList.toggle("translate-y-0", true);
-    topButton?.classList.toggle("opacity-100", true);
-  } else {
-    topButton?.classList.toggle("translate-y-4", true);
-    topButton?.classList.toggle("opacity-0", true);
-    topButton?.classList.toggle("translate-y-0", false);
-    topButton?.classList.toggle("opacity-100", false);
+  const visible = !entries[0].isIntersecting && entries[0].boundingClientRect.bottom < 0;
+  if (topButton) {
+    topButton.classList.toggle("translate-y-4", !visible);
+    topButton.classList.toggle("opacity-0", !visible);
+    topButton.classList.toggle("pointer-events-none", !visible);
+    topButton.classList.toggle("translate-y-0", visible);
+    topButton.classList.toggle("opacity-100", visible);
+    topButton.classList.toggle("pointer-events-auto", visible);
+    topButton.disabled = !visible;
+    console.log(visible ? "i appear" : "i disappear")
   }
 }
 
