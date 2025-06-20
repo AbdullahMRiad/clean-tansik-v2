@@ -2,6 +2,7 @@ import { boysData, girlsData } from "../data/data";
 import { calcScoreInput, schoolScoreInput, quduratScoreInput, collegeNameInput } from "./dom";
 import { displayData } from "../services/display";
 import { scoreDisplay } from "./dom";
+import { updateAndShowStats } from "../services/stats";
 
 export function filterAndDisplay() {
   const gender: string =
@@ -44,4 +45,5 @@ export function filterAndDisplay() {
   filtered.sort((a, b) => b.score - a.score);
 
   displayData(filtered);
+  updateAndShowStats(filtered);
 }
