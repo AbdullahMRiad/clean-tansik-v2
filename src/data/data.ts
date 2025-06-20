@@ -1,5 +1,5 @@
-import boysDataRaw from "./b_updated_data.json";
-import girlsDataRaw from "./g_updated_data.json";
+import boysDataRaw from "./categorized_colleges_boys_with_icons.json";
+import girlsDataRaw from "./categorized_colleges_girls_with_icons.json";
 import type { College, Category, InstitutionType, IconType } from "../types/types";
 
 export function mapToCollege(data: any[]): College[] {
